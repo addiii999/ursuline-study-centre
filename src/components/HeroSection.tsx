@@ -17,22 +17,19 @@ export default function HeroSection() {
       <h1 className="fade-in-up fade-in-up-2 font-[family-name:var(--font-manrope)] font-extrabold leading-[1.1] sm:leading-[1.05] tracking-tight mb-6"
         style={{ fontSize: "clamp(2.25rem, 8vw, 6rem)" }}
       >
-        <span className="gradient-text-hero block">Build Your Future</span>
-        <span className="gradient-text-hero">with </span>
+        <span className="gradient-text-hero block">A Safe & Focused</span>
+        <span className="gradient-text-hero">Environment for </span>
         <span
           className="scribble-underline"
           style={{ color: "#ef233c" }}
         >
-          Precision
+          Achievers
         </span>
-        <span className="gradient-text-hero"> Learning</span>
       </h1>
 
       {/* Subtext */}
-      <p className="fade-in-up fade-in-up-3 text-white/50 text-sm sm:text-base md:text-lg max-w-xl mx-auto mb-8 sm:mb-10 font-[family-name:var(--font-inter)] leading-relaxed">
-        Expert coaching for every student — from concept clarity to exam
-        mastery. Small batches, personal attention, and weekly tests to keep
-        you always ahead.
+      <p className="fade-in-up fade-in-up-3 text-white/50 text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-8 sm:mb-10 font-[family-name:var(--font-inter)] leading-relaxed">
+        Located within the trusted campus of <span className="text-white/80 font-semibold">Ursuline Convent School & Inter College</span>, we provide a safe, disciplined, and high-quality learning environment designed for excellence.
       </p>
 
       {/* CTA Buttons */}
@@ -58,6 +55,26 @@ export default function HeroSection() {
           </svg>
           Explore Features
         </a>
+      </div>
+
+      {/* Trust Highlights */}
+      <div className="fade-in-up fade-in-up-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-16 sm:mb-20 w-full max-w-5xl px-4">
+        {[
+          { label: "Secure Campus", icon: "🛡️", desc: "Located inside Ursuline Convent" },
+          { label: "Girls Institution", icon: "👩‍🎓", desc: "Safe & Ideal Environment" },
+          { label: "Disciplined System", icon: "📋", desc: "Monitored Study Flow" },
+          { label: "Limited Batches", icon: "👥", desc: "Personal Attention Only" },
+        ].map((item, i) => (
+          <div key={i} className="flex items-center gap-3 p-3 rounded-2xl bg-white/[0.03] border border-white/5 backdrop-blur-sm">
+            <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-xl grayscale-[0.5]">
+              {item.icon}
+            </div>
+            <div className="text-left">
+              <p className="text-white font-bold text-xs font-[family-name:var(--font-manrope)]">{item.label}</p>
+              <p className="text-white/40 text-[10px] font-[family-name:var(--font-inter)]">{item.desc}</p>
+            </div>
+          </div>
+        ))}
       </div>
 
       {/* Stats strip */}

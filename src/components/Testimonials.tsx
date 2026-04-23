@@ -39,9 +39,11 @@ export default function Testimonials() {
               </svg>
             ))}
           </div>
-          <span className="text-[#d4a843] text-xs uppercase tracking-widest font-[family-name:var(--font-inter)] block mb-3">Student Reviews</span>
-          <h2 className="font-[family-name:var(--font-manrope)] font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight">Trusted by 500+ Students</h2>
-          <p className="text-white/50 mt-4 max-w-lg mx-auto text-xs sm:text-sm font-[family-name:var(--font-inter)]">Real results from real students. Our 95% success rate speaks for itself.</p>
+          <span className="text-[#d4a843] text-xs uppercase tracking-widest font-[family-name:var(--font-inter)] block mb-3">Trusted by Parents</span>
+          <h2 className="font-[family-name:var(--font-manrope)] font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight">Safety Meets Excellence</h2>
+          <p className="text-white/50 mt-4 max-w-lg mx-auto text-xs sm:text-sm font-[family-name:var(--font-inter)]">
+            Ensuring academic discipline and a controlled environment within the reputed Ursuline campus — where parents feel secure and students stay focused.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">

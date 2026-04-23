@@ -89,7 +89,7 @@ export default function EnrollForm() {
           Book Your Free Demo Class
         </h2>
         <p className="text-white/40 mt-4 max-w-lg mx-auto text-xs sm:text-sm font-[family-name:var(--font-inter)]">
-          Fill in your details and we'll schedule a free trial class at your preferred time.
+          Fill in your details and we'll schedule a free trial class. <span className="text-[#d4a843]/60">Safe and secure environment within the reputed Ursuline girls campus.</span>
         </p>
       </div>
 
