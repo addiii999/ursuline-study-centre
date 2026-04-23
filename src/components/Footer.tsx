@@ -27,12 +27,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-12 mb-10 sm:mb-12 text-center sm:text-left">
           {/* Brand */}
           <div className="flex flex-col items-center sm:items-start">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-red-600 to-amber-500 flex items-center justify-center shadow-lg shadow-red-900/40">
-                <span className="text-white font-bold font-[family-name:var(--font-manrope)]">U</span>
-              </div>
+            <div className="flex flex-col items-center sm:items-start gap-4 mb-6">
+              <img src="/logo.jpeg" alt="USC Logo" className="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-full shadow-lg shadow-red-900/20 border border-white/10" />
               <div>
-                <p className="text-white font-bold font-[family-name:var(--font-manrope)]">Ursuline Study Centre</p>
+                <p className="text-white font-bold text-lg font-[family-name:var(--font-manrope)]">Ursuline Study Centre</p>
                 <p className="text-[#d4a843] text-[10px] tracking-widest uppercase font-[family-name:var(--font-inter)]">Precision Learning</p>
               </div>
             </div>

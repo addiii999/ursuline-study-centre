@@ -4,8 +4,13 @@ export default function HeroSection() {
       id="overview"
       className="relative z-10 min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 pt-24 pb-20 overflow-hidden"
     >
+      {/* Faint Watermark Logo */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03] pointer-events-none select-none z-0">
+        <img src="/logo.jpeg" alt="Watermark" className="w-[80vw] max-w-[800px] object-contain rounded-full blur-[2px]" />
+      </div>
+
       {/* Live badge */}
-      <div className="fade-in-up fade-in-up-1 mb-6 sm:mb-8 inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-sm rounded-full px-3 py-1 sm:px-4 sm:py-1.5">
+      <div className="relative z-10 fade-in-up fade-in-up-1 mb-6 sm:mb-8 inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-sm rounded-full px-3 py-1 sm:px-4 sm:py-1.5">
         <span className="w-1.5 h-1.5 rounded-full bg-[#f59e0b] animate-pulse" />
         <span className="text-white/70 text-[10px] sm:text-xs font-[family-name:var(--font-inter)] tracking-wide">
           ✦ Ursuline Study Centre — Now Enrolling
@@ -14,7 +19,7 @@ export default function HeroSection() {
       </div>
 
       {/* Main heading */}
-      <h1 className="fade-in-up fade-in-up-2 font-[family-name:var(--font-manrope)] font-extrabold leading-[1.1] sm:leading-[1.05] tracking-tight mb-6"
+      <h1 className="relative z-10 fade-in-up fade-in-up-2 font-[family-name:var(--font-manrope)] font-extrabold leading-[1.1] sm:leading-[1.05] tracking-tight mb-6"
         style={{ fontSize: "clamp(2.25rem, 8vw, 6rem)" }}
       >
         <span className="gradient-text-hero block">A Safe & Focused</span>

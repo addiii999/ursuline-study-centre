@@ -31,10 +31,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-red-600 to-amber-500 flex items-center justify-center shadow-lg shadow-red-900/40">
-            <span className="text-white font-bold text-sm font-[family-name:var(--font-manrope)]">U</span>
-          </div>
-          <div className="flex flex-col leading-tight">
+          <img src="/logo.jpeg" alt="USC Logo" className="w-10 h-10 sm:w-12 sm:h-12 object-contain rounded-full border border-white/10" />
+          <div className="flex flex-col leading-tight hidden sm:flex">
             <span className="text-white font-bold text-sm font-[family-name:var(--font-manrope)] tracking-tight">
               Ursuline
             </span>
