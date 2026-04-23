@@ -5,7 +5,7 @@ export default function HeroSection() {
       className="relative z-10 min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 pt-24 pb-20 overflow-hidden"
     >
       {/* Faint Watermark Logo */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03] pointer-events-none select-none z-0">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.015] pointer-events-none select-none z-0">
         <img src="/logo.jpeg" alt="Watermark" className="w-[80vw] max-w-[800px] object-contain rounded-full blur-[2px]" />
       </div>
 

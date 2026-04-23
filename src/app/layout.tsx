@@ -51,24 +51,28 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col antialiased">
         {/* Splash Screen */}
-        <div id="splash-screen" className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0a0505] transition-opacity duration-1000 ease-in-out">
+        <div id="splash-screen" className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0a0505] transition-opacity duration-700 ease-in-out" style={{ display: 'none' }}>
           <div className="relative animate-pulse">
-            <img src="/logo.jpeg" alt="USC Logo" className="w-32 h-32 sm:w-48 sm:h-48 object-contain rounded-full shadow-[0_0_40px_rgba(239,35,60,0.4)]" />
+            <img src="/logo.jpeg" alt="USC Logo" className="w-24 h-24 sm:w-32 sm:h-32 object-contain rounded-full shadow-[0_0_30px_rgba(239,35,60,0.3)]" />
           </div>
         </div>
         <script dangerouslySetInnerHTML={{
           __html: `
-            window.addEventListener('load', function() {
+            (function() {
               const splash = document.getElementById('splash-screen');
-              if (splash) {
-                setTimeout(() => {
-                  splash.style.opacity = '0';
+              if (!sessionStorage.getItem('splashShown')) {
+                splash.style.display = 'flex';
+                window.addEventListener('load', function() {
                   setTimeout(() => {
-                    splash.style.display = 'none';
-                  }, 1000);
-                }, 500);
+                    splash.style.opacity = '0';
+                    setTimeout(() => {
+                      splash.style.display = 'none';
+                      sessionStorage.setItem('splashShown', 'true');
+                    }, 700);
+                  }, 300);
+                });
               }
-            });
+            })();
           `
         }} />
         {children}
