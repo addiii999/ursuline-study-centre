@@ -1,0 +1,359 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --red: #ef233c;
+    --gold: #d4a843;
+    --saffron: #f59e0b;
+    --bg: #000000;
+    --bg-dark-red: #1a0a05;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', sans-serif;
+  }
+}
+
+/* ─── Starfield ─── */
+@keyframes starfall {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-2000px); }
+}
+
+.stars-small {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 200%;
+  background-image:
+    radial-gradient(1px 1px at 10% 15%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1px 1px at 25% 40%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(1px 1px at 40% 70%, rgba(255,255,255,0.7) 0%, transparent 100%),
+    radial-gradient(1px 1px at 55% 20%, rgba(255,255,255,0.4) 0%, transparent 100%),
+    radial-gradient(1px 1px at 70% 55%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1px 1px at 85% 85%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(1px 1px at 92% 30%, rgba(255,255,255,0.7) 0%, transparent 100%),
+    radial-gradient(1px 1px at 5% 90%, rgba(255,255,255,0.4) 0%, transparent 100%),
+    radial-gradient(1px 1px at 33% 60%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(1px 1px at 65% 10%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1px 1px at 80% 75%, rgba(255,255,255,0.4) 0%, transparent 100%),
+    radial-gradient(1px 1px at 15% 50%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(1px 1px at 48% 33%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1px 1px at 73% 88%, rgba(255,255,255,0.4) 0%, transparent 100%),
+    radial-gradient(1px 1px at 20% 25%, rgba(255,255,255,0.7) 0%, transparent 100%),
+    radial-gradient(1px 1px at 57% 65%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(1px 1px at 88% 45%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1px 1px at 42% 95%, rgba(255,255,255,0.4) 0%, transparent 100%),
+    radial-gradient(1px 1px at 96% 60%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(1px 1px at 3% 35%, rgba(255,255,255,0.7) 0%, transparent 100%);
+  animation: starfall 80s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.stars-big {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 200%;
+  background-image:
+    radial-gradient(2px 2px at 18% 22%, rgba(255,255,255,0.8) 0%, transparent 100%),
+    radial-gradient(2px 2px at 36% 75%, rgba(255,255,255,0.7) 0%, transparent 100%),
+    radial-gradient(2px 2px at 62% 38%, rgba(255,255,255,0.9) 0%, transparent 100%),
+    radial-gradient(2px 2px at 78% 62%, rgba(255,255,255,0.7) 0%, transparent 100%),
+    radial-gradient(2px 2px at 90% 15%, rgba(255,255,255,0.8) 0%, transparent 100%),
+    radial-gradient(2px 2px at 8% 55%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(2px 2px at 50% 88%, rgba(255,255,255,0.9) 0%, transparent 100%),
+    radial-gradient(2px 2px at 27% 10%, rgba(255,255,255,0.7) 0%, transparent 100%),
+    radial-gradient(2px 2px at 84% 92%, rgba(255,255,255,0.8) 0%, transparent 100%),
+    radial-gradient(2px 2px at 44% 45%, rgba(255,255,255,0.6) 0%, transparent 100%);
+  animation: starfall 120s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─── Grid overlay ─── */
+.grid-overlay {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─── Radial glows ─── */
+.radial-glow-red {
+  position: fixed;
+  top: 10%;
+  left: 20%;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(239,35,60,0.07) 0%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.radial-glow-amber {
+  position: fixed;
+  bottom: 20%;
+  right: 15%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212,168,67,0.06) 0%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─── Spinning border animation ─── */
+@keyframes spin-border {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes border-rotate {
+  0% { --border-angle: 0turn; }
+  100% { --border-angle: 1turn; }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+.spinning-border-btn {
+  position: relative;
+  padding: 2px;
+  border-radius: 9999px;
+  background: conic-gradient(from var(--border-angle), #ef233c, #d4a843, #f59e0b, #ef233c);
+  animation: border-rotate 2s linear infinite;
+}
+
+.spinning-border-btn > span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  background: #0a0a0a;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #fff;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.spinning-border-btn:hover > span {
+  background: #1a0a05;
+}
+
+/* ─── Saffron underline scribble ─── */
+.scribble-underline {
+  position: relative;
+  display: inline-block;
+}
+.scribble-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12'%3E%3Cpath d='M0 8 Q25 2 50 8 Q75 14 100 8 Q125 2 150 8 Q175 14 200 8' stroke='%23f59e0b' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") center/100% 100% no-repeat;
+}
+
+/* ─── Fade-in-up animation ─── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+.fade-in-up-1 { animation-delay: 0.1s; }
+.fade-in-up-2 { animation-delay: 0.25s; }
+.fade-in-up-3 { animation-delay: 0.4s; }
+.fade-in-up-4 { animation-delay: 0.55s; }
+.fade-in-up-5 { animation-delay: 0.7s; }
+
+/* ─── Floating card ─── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.floating {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ─── Bento glow hover ─── */
+.bento-card {
+  position: relative;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.bento-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(239,35,60,0.05) 0%, transparent 60%);
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.bento-card:hover::before {
+  opacity: 1;
+}
+
+.bento-card:hover {
+  border-color: rgba(239,35,60,0.3);
+  box-shadow: 0 0 30px rgba(239,35,60,0.1), 0 0 60px rgba(239,35,60,0.05);
+  transform: translateY(-2px);
+}
+
+/* ─── Stat hover underline ─── */
+.stat-item {
+  position: relative;
+  cursor: default;
+  padding-bottom: 4px;
+}
+.stat-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #d4a843;
+  transition: width 0.3s ease;
+}
+.stat-item:hover::after {
+  width: 100%;
+}
+
+/* ─── Glassmorphism ─── */
+.glass {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ─── Gradient text ─── */
+.gradient-text-hero {
+  background: linear-gradient(180deg, #ffffff 0%, #999999 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Scroll reveal (IntersectionObserver driven) ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Status pills ─── */
+.pill-green {
+  background: rgba(34,197,94,0.15);
+  color: #4ade80;
+  border: 1px solid rgba(34,197,94,0.25);
+  border-radius: 9999px;
+  padding: 2px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.pill-saffron {
+  background: rgba(245,158,11,0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245,158,11,0.25);
+  border-radius: 9999px;
+  padding: 2px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.pill-red {
+  background: rgba(239,35,60,0.15);
+  color: #ef233c;
+  border: 1px solid rgba(239,35,60,0.25);
+  border-radius: 9999px;
+  padding: 2px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* ─── Nav ─── */
+.nav-link {
+  color: rgba(255,255,255,0.65);
+  font-size: 0.9rem;
+  transition: color 0.2s;
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #ef233c;
+  transition: width 0.25s;
+}
+.nav-link:hover {
+  color: #fff;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #ef233c44; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #ef233c88; }
