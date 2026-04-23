@@ -80,15 +80,15 @@ export default function EnrollForm() {
     }`;
 
   return (
-    <section id="contact" className="relative z-10 max-w-7xl mx-auto px-6 py-24">
-      <div className="text-center mb-12 reveal">
+    <section id="contact" className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+      <div className="text-center mb-10 sm:mb-12 reveal">
         <span className="text-[#ef233c] text-xs uppercase tracking-widest font-[family-name:var(--font-inter)] mb-3 block">
           Get Started
         </span>
-        <h2 className="font-[family-name:var(--font-manrope)] font-extrabold text-4xl md:text-5xl gradient-text-hero tracking-tight">
+        <h2 className="font-[family-name:var(--font-manrope)] font-extrabold text-3xl sm:text-4xl md:text-5xl gradient-text-hero tracking-tight">
           Book Your Free Demo Class
         </h2>
-        <p className="text-white/40 mt-4 max-w-lg mx-auto text-sm font-[family-name:var(--font-inter)]">
+        <p className="text-white/40 mt-4 max-w-lg mx-auto text-xs sm:text-sm font-[family-name:var(--font-inter)]">
           Fill in your details and we'll schedule a free trial class at your preferred time.
         </p>
       </div>
@@ -102,46 +102,46 @@ export default function EnrollForm() {
           }}
         >
           {/* Form header bar */}
-          <div className="px-8 py-5 border-b border-gray-100 flex items-center gap-3"
+          <div className="px-6 sm:px-8 py-4 sm:py-5 border-b border-gray-100 flex items-center gap-3"
             style={{ background: "linear-gradient(135deg, #0f0f0f 0%, #1a0a05 100%)" }}>
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#ef233c] to-[#d4a843] flex items-center justify-center">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#ef233c] to-[#d4a843] flex items-center justify-center flex-shrink-0">
               <span className="text-white font-bold text-xs">U</span>
             </div>
             <div>
               <p className="text-white font-semibold text-sm font-[family-name:var(--font-manrope)]">Ursuline Study Centre</p>
-              <p className="text-white/40 text-xs font-[family-name:var(--font-inter)]">Enrollment Form</p>
+              <p className="text-white/40 text-[10px] sm:text-xs font-[family-name:var(--font-inter)]">Enrollment Form</p>
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="px-8 py-8 space-y-5" noValidate>
+          <form onSubmit={handleSubmit} className="px-5 sm:px-8 py-6 sm:py-8 space-y-4 sm:space-y-5" noValidate>
             {/* Name */}
             <div>
-              <label className="block text-gray-600 text-xs font-semibold mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
+              <label className="block text-gray-600 text-[10px] sm:text-xs font-semibold mb-1 sm:mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
                 Full Name *
               </label>
               <input id="form-name" type="text" placeholder="E.g. Arjun Sharma"
                 className={inputClass("name")}
                 value={form.name}
                 onChange={e => setForm(f => ({ ...f, name: e.target.value }))} />
-              {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
+              {errors.name && <p className="text-red-500 text-[10px] mt-1">{errors.name}</p>}
             </div>
 
             {/* Email */}
             <div>
-              <label className="block text-gray-600 text-xs font-semibold mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
+              <label className="block text-gray-600 text-[10px] sm:text-xs font-semibold mb-1 sm:mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
                 Email Address *
               </label>
               <input id="form-email" type="email" placeholder="you@example.com"
                 className={inputClass("email")}
                 value={form.email}
                 onChange={e => setForm(f => ({ ...f, email: e.target.value }))} />
-              {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
+              {errors.email && <p className="text-red-500 text-[10px] mt-1">{errors.email}</p>}
             </div>
 
             {/* Mobile + Confirm Mobile */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-gray-600 text-xs font-semibold mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
+                <label className="block text-gray-600 text-[10px] sm:text-xs font-semibold mb-1 sm:mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
                   Mobile Number *
                 </label>
                 <input id="form-mobile" type="tel" placeholder="10-digit number"
@@ -149,10 +149,10 @@ export default function EnrollForm() {
                   className={inputClass("mobile")}
                   value={form.mobile}
                   onChange={e => setForm(f => ({ ...f, mobile: e.target.value.replace(/\D/g, "") }))} />
-                {errors.mobile && <p className="text-red-500 text-xs mt-1">{errors.mobile}</p>}
+                {errors.mobile && <p className="text-red-500 text-[10px] mt-1">{errors.mobile}</p>}
               </div>
               <div>
-                <label className="block text-gray-600 text-xs font-semibold mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
+                <label className="block text-gray-600 text-[10px] sm:text-xs font-semibold mb-1 sm:mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
                   Confirm Mobile *
                 </label>
                 <input id="form-confirm-mobile" type="tel" placeholder="Repeat mobile"
@@ -160,14 +160,14 @@ export default function EnrollForm() {
                   className={inputClass("confirmMobile")}
                   value={form.confirmMobile}
                   onChange={e => setForm(f => ({ ...f, confirmMobile: e.target.value.replace(/\D/g, "") }))} />
-                {errors.confirmMobile && <p className="text-red-500 text-xs mt-1">{errors.confirmMobile}</p>}
+                {errors.confirmMobile && <p className="text-red-500 text-[10px] mt-1">{errors.confirmMobile}</p>}
               </div>
             </div>
 
             {/* Class + Subject */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-gray-600 text-xs font-semibold mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
+                <label className="block text-gray-600 text-[10px] sm:text-xs font-semibold mb-1 sm:mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
                   Class *
                 </label>
                 <div className="relative">
@@ -179,10 +179,10 @@ export default function EnrollForm() {
                   </select>
                   <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">▾</div>
                 </div>
-                {errors.studentClass && <p className="text-red-500 text-xs mt-1">{errors.studentClass}</p>}
+                {errors.studentClass && <p className="text-red-500 text-[10px] mt-1">{errors.studentClass}</p>}
               </div>
               <div>
-                <label className="block text-gray-600 text-xs font-semibold mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
+                <label className="block text-gray-600 text-[10px] sm:text-xs font-semibold mb-1 sm:mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
                   Subject *
                 </label>
                 <div className="relative">
@@ -194,14 +194,14 @@ export default function EnrollForm() {
                   </select>
                   <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">▾</div>
                 </div>
-                {errors.subject && <p className="text-red-500 text-xs mt-1">{errors.subject}</p>}
+                {errors.subject && <p className="text-red-500 text-[10px] mt-1">{errors.subject}</p>}
               </div>
             </div>
 
             {/* Date + Time */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-gray-600 text-xs font-semibold mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
+                <label className="block text-gray-600 text-[10px] sm:text-xs font-semibold mb-1 sm:mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
                   Preferred Date *
                 </label>
                 <input id="form-date" type="date"
@@ -209,10 +209,10 @@ export default function EnrollForm() {
                   className={inputClass("date")}
                   value={form.date}
                   onChange={e => setForm(f => ({ ...f, date: e.target.value }))} />
-                {errors.date && <p className="text-red-500 text-xs mt-1">{errors.date}</p>}
+                {errors.date && <p className="text-red-500 text-[10px] mt-1">{errors.date}</p>}
               </div>
               <div>
-                <label className="block text-gray-600 text-xs font-semibold mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
+                <label className="block text-gray-600 text-[10px] sm:text-xs font-semibold mb-1 sm:mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
                   Preferred Time *
                 </label>
                 <div className="relative">
@@ -224,36 +224,36 @@ export default function EnrollForm() {
                   </select>
                   <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">▾</div>
                 </div>
-                {errors.time && <p className="text-red-500 text-xs mt-1">{errors.time}</p>}
+                {errors.time && <p className="text-red-500 text-[10px] mt-1">{errors.time}</p>}
               </div>
             </div>
 
             {/* Captcha */}
             <div>
-              <label className="block text-gray-600 text-xs font-semibold mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
+              <label className="block text-gray-600 text-[10px] sm:text-xs font-semibold mb-1 sm:mb-1.5 font-[family-name:var(--font-inter)] uppercase tracking-wide">
                 Security Check *
               </label>
-              <div className="flex items-center gap-3">
-                <div className="bg-gray-100 rounded-lg px-4 py-3 text-gray-800 font-semibold text-sm select-none border border-gray-200 min-w-[100px] text-center font-[family-name:var(--font-manrope)]">
+              <div className="flex flex-col sm:flex-row items-center gap-3">
+                <div className="w-full sm:w-auto bg-gray-100 rounded-lg px-4 py-2 sm:py-3 text-gray-800 font-semibold text-sm select-none border border-gray-200 min-w-[100px] text-center font-[family-name:var(--font-manrope)]">
                   {captchaA} + {captchaB} = ?
                 </div>
                 <input
                   id="form-captcha"
                   type="number"
                   placeholder="Answer"
-                  className={`${inputClass("captcha")} max-w-[100px]`}
+                  className={`${inputClass("captcha")} w-full sm:max-w-[100px]`}
                   value={captchaInput}
                   onChange={e => setCaptchaInput(e.target.value)}
                 />
               </div>
-              {errors.captcha && <p className="text-red-500 text-xs mt-1">{errors.captcha}</p>}
+              {errors.captcha && <p className="text-red-500 text-[10px] mt-1">{errors.captcha}</p>}
             </div>
 
             {/* Submit */}
             <button
               id="form-submit-btn"
               type="submit"
-              className="w-full py-3.5 rounded-xl text-white font-semibold text-sm transition-all duration-300 hover:opacity-90 active:scale-[0.99] font-[family-name:var(--font-manrope)]"
+              className="w-full py-3.5 sm:py-4 rounded-xl text-white font-semibold text-sm transition-all duration-300 hover:opacity-90 active:scale-[0.99] font-[family-name:var(--font-manrope)]"
               style={{
                 background: "linear-gradient(135deg, #ef233c 0%, #d4a843 100%)",
                 boxShadow: "0 4px 20px rgba(239,35,60,0.35)",
@@ -262,7 +262,7 @@ export default function EnrollForm() {
               Book Free Demo Class →
             </button>
 
-            <p className="text-gray-400 text-xs text-center font-[family-name:var(--font-inter)]">
+            <p className="text-gray-400 text-[10px] sm:text-xs text-center font-[family-name:var(--font-inter)]">
               No payment required. We'll call you to confirm.
             </p>
           </form>
