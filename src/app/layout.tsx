@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     "concept clarity",
   ],
   icons: {
-    icon: "/logo.jpeg",
-    shortcut: "/logo.jpeg",
-    apple: "/logo.jpeg",
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/logo.jpeg", // Using the full logo for Apple Touch Icon as it's displayed larger on home screens
   },
   openGraph: {
     title: "Ursuline Study Centre",
