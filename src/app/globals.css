@@ -1,28 +1,45 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
-
-@font-face {
-  font-family: 'Fustat';
-  src: url('/fonts/Fustat-Bold.woff2') format('woff2'),
-    url('/fonts/Fustat-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+@theme {
+  --font-fustat: var(--font-fustat);
+  --font-inter: var(--font-inter);
 }
 
-html {
-  font-family: 'Inter', sans-serif;
-  -webkit-font-smoothing: antialiased;
+:root {
+  --primary: #0084FF;
+  --primary-glow: #60B1FF;
+  --primary-deep: #319AFF;
+  --background: #ffffff;
+  --foreground: #020617;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Fustat', sans-serif;
+@layer base {
+  body {
+    @apply bg-white text-slate-900;
+  }
+}
+
+@layer utilities {
+  .orb-filter {
+    filter: hue-rotate(-55deg) saturate(250%) brightness(1.2) contrast(1.1);
+  }
+  
+  .glass-navbar {
+    @apply backdrop-blur-[50px] border border-black/10;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
+  }
+
+  .cta-shadow {
+    box-shadow: inset 0px 4px 4px 0px rgba(255, 255, 255, 0.35);
+  }
+
+  .premium-blur {
+    filter: blur(80px);
+  }
+}
+
+/* Transitions */
+.smooth-transition {
+  @apply transition-all duration-300 ease-in-out;
 }
