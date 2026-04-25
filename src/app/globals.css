@@ -3,19 +3,19 @@
 @theme {
   --font-fustat: var(--font-fustat);
   --font-inter: var(--font-inter);
-}
-
-:root {
-  --primary: #0084FF;
-  --primary-glow: #60B1FF;
-  --primary-deep: #319AFF;
-  --background: #ffffff;
-  --foreground: #020617;
+  
+  --color-primary: #0084FF;
+  --color-primary-glow: #60B1FF;
+  --color-primary-deep: #319AFF;
 }
 
 @layer base {
+  *, ::after, ::before {
+    @apply border-slate-200;
+  }
+  
   body {
-    @apply bg-white text-slate-900;
+    @apply bg-white text-slate-900 font-inter antialiased;
   }
 }
 
@@ -37,9 +37,4 @@
   .premium-blur {
     filter: blur(80px);
   }
-}
-
-/* Transitions */
-.smooth-transition {
-  @apply transition-all duration-300 ease-in-out;
 }
