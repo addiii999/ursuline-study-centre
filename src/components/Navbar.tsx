@@ -31,7 +31,7 @@ export default function Navbar() {
           </div>
           <div className="leading-tight">
             <div className="font-kalam font-bold text-[16px] text-[#2d2d2d] leading-none">Ursuline Study Centre</div>
-            <div className="font-patrick text-[10px] text-[#2d5da1]">Premium Academic Coaching</div>
+            <div className="font-patrick text-[10px] text-[#2d5da1]">Powered by Academic Origin</div>
           </div>
         </Link>
 

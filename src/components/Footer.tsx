@@ -35,7 +35,7 @@ export default function Footer() {
               </div>
               <div>
                 <div className="font-kalam text-[18px] text-[#fdfbf7] leading-none">Ursuline Study Centre</div>
-                <div className="font-patrick text-[12px] text-[#aaa59a]">Premium Academic Coaching</div>
+                <div className="font-patrick text-[12px] text-[#aaa59a]">Powered by Academic Origin</div>
               </div>
             </div>
             <p className="font-patrick text-[14px] text-[#aaa59a] leading-relaxed mb-5">
