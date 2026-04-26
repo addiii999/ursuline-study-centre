@@ -1,27 +1,27 @@
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
-import TrustHighlights from '@/components/TrustHighlights';
+import AboutSection from '@/components/AboutSection';
 import CoursesSection from '@/components/CoursesSection';
-import ResultsSection from '@/components/ResultsSection';
 import FacultySection from '@/components/FacultySection';
-import Testimonials from '@/components/Testimonials';
-import DemoForm from '@/components/DemoForm';
-import ParentTrustSection from '@/components/ParentTrustSection';
+import WhyChooseUs from '@/components/WhyChooseUs';
+import AdmissionSection from '@/components/AdmissionSection';
+import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <HeroSection />
-      <TrustHighlights />
+      <AboutSection />
       <CoursesSection />
-      <ResultsSection />
       <FacultySection />
-      <Testimonials />
-      <DemoForm />
-      <ParentTrustSection />
+      <WhyChooseUs />
+      <AdmissionSection />
+      <ContactSection />
       <Footer />
+      <FloatingWhatsApp />
     </>
   );
 }

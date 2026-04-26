@@ -2,13 +2,13 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ursuline Study Centre | Premium Coaching for Academic Excellence",
-  description: "Located inside Ursuline Convent School & Inter College, Ranchi. Expert coaching for Class 11, 12, JEE, NEET — in a safe, disciplined, and premium learning environment.",
-  keywords: "Ursuline Study Centre, Coaching Ranchi, JEE Coaching, NEET Coaching, Class 11 12, Ursuline Convent",
+  title: "Ursuline Study Centre | Premium Girls Coaching Institute, Ranchi",
+  description: "Ursuline Study Centre — only girls coaching for Classes 9–12. Science, Commerce, Humanities, JEE, NEET, CLAT & Vocational Courses. Located near Ursuline Convent School, Ranchi. Powered by Academic Origin.",
+  keywords: "Ursuline Study Centre, Girls Coaching Ranchi, JEE NEET Coaching, Ursuline Convent, Academic Origin, PCM PCB Commerce",
   authors: [{ name: "Ursuline Study Centre" }],
   openGraph: {
-    title: "Ursuline Study Centre | Premium Coaching for Academic Excellence",
-    description: "Safe, trusted coaching inside Ursuline Convent School campus, Ranchi.",
+    title: "Ursuline Study Centre | Premium Girls Coaching — Ranchi",
+    description: "Empowering Girls. Building Futures. Admissions Open 2026–27.",
     url: "https://ursulinstudycentre.in",
     siteName: "Ursuline Study Centre",
     locale: "en_IN",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#fdfbf7",
+  themeColor: "#800000",
   width: "device-width",
   initialScale: 1,
 };

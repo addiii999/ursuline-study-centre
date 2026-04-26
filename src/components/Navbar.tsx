@@ -2,90 +2,150 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 
-const navLinks = ['Home', 'About', 'Courses', 'Faculty', 'Results', 'Gallery', 'Contact'];
+const navLinks = [
+  { label: 'Home', href: '#home' },
+  { label: 'About', href: '#about' },
+  { label: 'Courses', href: '#courses' },
+  { label: 'Faculty', href: '#faculty' },
+  { label: 'Why Us', href: '#why-us' },
+  { label: 'Admission', href: '#admission' },
+  { label: 'Contact', href: '#contact' },
+];
+
+const marqueeText = [
+  '📚 Admissions Open 2026–27 | Only Girls Institute',
+  '✨ Classes 9th to 12th | JAC & CBSE Boards',
+  '🎯 JEE · NEET · CLAT · AI · Programming · DCA · Tally',
+  '📍 Near Ursuline Convent School, Purliya Road, Ranchi',
+  '💛 Powered by Academic Origin',
+];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 10);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const fn = () => setScrolled(window.scrollY > 48);
+    window.addEventListener('scroll', fn, { passive: true });
+    return () => window.removeEventListener('scroll', fn);
   }, []);
 
-  return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-[100] navbar-hand transition-all duration-300 ${scrolled ? 'py-2' : 'py-3'}`}
-    >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between">
-        {/* Brand */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <div
-            className="relative w-10 h-10 overflow-hidden border-2 border-[#2d2d2d] shadow-hard-sm flex-shrink-0"
-            style={{ borderRadius: '60px 5px 60px 5px / 5px 60px 5px 60px' }}
-          >
-            <Image src="/logo.jpeg" alt="USC Logo" fill className="object-cover" />
-          </div>
-          <div className="leading-tight">
-            <div className="font-kalam font-bold text-[16px] text-[#2d2d2d] leading-none">Ursuline Study Centre</div>
-            <div className="font-patrick text-[10px] text-[#2d5da1]">Powered by Academic Origin</div>
-          </div>
-        </Link>
+  const marqueeItems = [...marqueeText, ...marqueeText];
 
-        {/* Desktop Links */}
-        <div className="hidden lg:flex items-center gap-6">
-          {navLinks.map((link) => (
-            <Link
-              key={link}
-              href={`#${link.toLowerCase()}`}
-              className="font-patrick text-[15px] text-[#2d2d2d] hover:text-[#ff4d4d] transition-colors relative group"
-            >
-              {link}
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4d4d] group-hover:w-full transition-all duration-200 rounded-full" />
-            </Link>
+  return (
+    <>
+      {/* ── Announcement Bar ── */}
+      <div className="announcement-bar">
+        <div className="marquee-track">
+          {marqueeItems.map((t, i) => (
+            <span key={i} style={{ fontFamily: 'var(--sans)', fontSize: '0.8rem', fontWeight: 500, color: 'rgba(255,255,255,0.92)', flexShrink: 0 }}>
+              {t}
+            </span>
           ))}
         </div>
-
-        {/* CTA */}
-        <a href="#demo" className="btn-primary hidden lg:inline-flex text-[14px] px-5 py-2.5">
-          📚 Book Free Demo
-        </a>
-
-        {/* Mobile Toggle */}
-        <button
-          className="lg:hidden p-2 border-2 border-[#2d2d2d] bg-white shadow-hard-sm"
-          style={{ borderRadius: '12px 4px 12px 4px / 4px 12px 4px 12px' }}
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-        >
-          {open ? <X size={20} /> : <Menu size={20} />}
-        </button>
       </div>
 
-      {/* Mobile Menu */}
-      {open && (
-        <div
-          className="lg:hidden mx-4 mt-2 bg-[#fdfbf7] border-3 border-[#2d2d2d] shadow-hard p-4 flex flex-col gap-3"
-          style={{ borderRadius: '20px 8px 20px 8px / 8px 20px 8px 20px', border: '3px solid #2d2d2d' }}
-        >
-          {navLinks.map((link) => (
-            <Link
-              key={link}
-              href={`#${link.toLowerCase()}`}
-              className="font-kalam text-[18px] text-[#2d2d2d] hover:text-[#ff4d4d] py-2 border-b border-dashed border-[#e5e0d8] last:border-0 transition-colors"
-              onClick={() => setOpen(false)}
+      {/* ── Main Navbar ── */}
+      <nav
+        style={{
+          position: 'sticky', top: 0, zIndex: 100,
+          background: scrolled ? 'rgba(255,255,255,0.98)' : 'rgba(255,255,255,0.97)',
+          backdropFilter: 'blur(16px)',
+          borderBottom: `1px solid ${scrolled ? 'var(--gray-border)' : 'transparent'}`,
+          boxShadow: scrolled ? '0 2px 20px rgba(0,0,0,0.08)' : 'none',
+          transition: 'all 0.3s ease',
+        }}
+      >
+        <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '70px' }}>
+          {/* Brand */}
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
+            <div style={{
+              position: 'relative', width: '44px', height: '44px', borderRadius: '6px',
+              overflow: 'hidden', border: '1.5px solid var(--gold)',
+              flexShrink: 0,
+            }}>
+              <Image src="/logo.jpeg" alt="USC" fill style={{ objectFit: 'cover' }} />
+            </div>
+            <div>
+              <div style={{ fontFamily: 'var(--serif)', fontWeight: 700, fontSize: '1rem', color: 'var(--black)', lineHeight: 1.1 }}>
+                Ursuline Study Centre
+              </div>
+              <div style={{ fontFamily: 'var(--sans)', fontSize: '0.65rem', color: 'var(--gold-dark)', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', lineHeight: 1 }}>
+                Powered by Academic Origin
+              </div>
+            </div>
+          </Link>
+
+          {/* Desktop Links */}
+          <div style={{ display: 'none', gap: '28px' }} className="desktop-nav">
+            {navLinks.map(({ label, href }) => (
+              <a key={label} href={href} style={{
+                fontFamily: 'var(--sans)', fontSize: '0.88rem', fontWeight: 500,
+                color: 'var(--black)', textDecoration: 'none', transition: 'color 0.2s',
+                position: 'relative', paddingBottom: '2px',
+              }}
+                onMouseEnter={e => { (e.target as HTMLElement).style.color = 'var(--maroon)'; }}
+                onMouseLeave={e => { (e.target as HTMLElement).style.color = 'var(--black)'; }}
+              >
+                {label}
+              </a>
+            ))}
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <a href="#contact" className="btn-gold" style={{ padding: '10px 22px', fontSize: '0.85rem' }}>
+              Apply Now
+            </a>
+            <button
+              onClick={() => setOpen(!open)}
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                width: '40px', height: '40px', border: '1.5px solid var(--gray-border)',
+                borderRadius: '6px', background: 'white', cursor: 'pointer',
+                color: 'var(--black)',
+              }}
+              aria-label="Menu"
+              className="mobile-menu-btn"
             >
-              {link}
-            </Link>
-          ))}
-          <a href="#demo" className="btn-primary mt-2 text-center justify-center" onClick={() => setOpen(false)}>
-            📚 Book Free Demo
-          </a>
+              {open ? <X size={18} /> : <Menu size={18} />}
+            </button>
+          </div>
         </div>
-      )}
-    </nav>
+
+        {/* Mobile menu */}
+        {open && (
+          <div style={{
+            background: 'white', borderTop: '1px solid var(--gray-border)',
+            padding: '16px 24px 24px',
+          }}>
+            {navLinks.map(({ label, href }) => (
+              <a key={label} href={href}
+                onClick={() => setOpen(false)}
+                style={{
+                  display: 'block', padding: '13px 0',
+                  fontFamily: 'var(--sans)', fontSize: '1rem', fontWeight: 500,
+                  color: 'var(--black)', textDecoration: 'none',
+                  borderBottom: '1px solid var(--gray-border)',
+                }}
+              >
+                {label}
+              </a>
+            ))}
+            <a href="#contact" className="btn-gold" style={{ display: 'block', textAlign: 'center', marginTop: '16px' }} onClick={() => setOpen(false)}>
+              Apply Now — 2026–27
+            </a>
+          </div>
+        )}
+      </nav>
+
+      <style>{`
+        @media (min-width: 960px) {
+          .desktop-nav { display: flex !important; }
+          .mobile-menu-btn { display: none !important; }
+        }
+      `}</style>
+    </>
   );
 }

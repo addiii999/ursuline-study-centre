@@ -1,72 +1,88 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
-import { MapPin, Phone, Mail, ArrowRight, Heart } from 'lucide-react';
+import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react';
 
-const footerLinks = [
+const quickLinks = [
+  { label: 'Home', href: '#home' },
   { label: 'About Us', href: '#about' },
   { label: 'Courses', href: '#courses' },
   { label: 'Faculty', href: '#faculty' },
-  { label: 'Results', href: '#results' },
-  { label: 'Testimonials', href: '#gallery' },
+  { label: 'Why Choose Us', href: '#why-us' },
+  { label: 'Admission', href: '#admission' },
   { label: 'Contact', href: '#contact' },
-  { label: 'Book Free Demo', href: '#demo' },
+];
+
+const courses = [
+  'Science (PCM / PCB)',
+  'Commerce',
+  'Humanities',
+  'JEE / NEET / CLAT',
+  'AI & Programming',
+  'DCA / Tally',
+  'Social Media Handling',
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2d2d2d] text-[#fdfbf7] relative overflow-hidden">
-      {/* Top wavy divider */}
-      <div className="w-full overflow-hidden leading-none">
-        <svg viewBox="0 0 1440 60" className="w-full" fill="#fdfbf7" preserveAspectRatio="none" style={{ display: 'block', marginBottom: '-2px' }}>
-          <path d="M0,40 Q180,0 360,30 Q540,60 720,25 Q900,-5 1080,30 Q1260,60 1440,20 L1440,0 L0,0 Z" />
-        </svg>
-      </div>
+    <footer style={{ background: 'var(--black)', color: 'white' }}>
+      {/* Gold top border */}
+      <div style={{ height: '3px', background: 'linear-gradient(90deg, transparent, var(--gold), var(--gold-light), var(--gold), transparent)' }} />
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-14">
-        <div className="grid md:grid-cols-3 gap-10 mb-12">
+      <div className="container" style={{ padding: '60px 24px 40px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '40px', marginBottom: '48px' }}>
           {/* Brand */}
-          <div className="col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <div
-                className="relative w-12 h-12 overflow-hidden border-2 border-[#fdfbf7] flex-shrink-0"
-                style={{ borderRadius: '60px 5px 60px 5px / 5px 60px 5px 60px' }}
-              >
-                <Image src="/logo.jpeg" alt="USC Logo" fill className="object-cover" />
+          <div style={{ gridColumn: 'span 1' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+              <div style={{ width: '44px', height: '44px', borderRadius: '6px', overflow: 'hidden', border: '1.5px solid var(--gold)', flexShrink: 0, position: 'relative' }}>
+                <Image src="/logo.jpeg" alt="USC" fill style={{ objectFit: 'cover' }} />
               </div>
               <div>
-                <div className="font-kalam text-[18px] text-[#fdfbf7] leading-none">Ursuline Study Centre</div>
-                <div className="font-patrick text-[12px] text-[#aaa59a]">Powered by Academic Origin</div>
+                <div style={{ fontFamily: 'var(--serif)', fontSize: '0.95rem', fontWeight: 700, color: 'white', lineHeight: 1.1 }}>Ursuline Study Centre</div>
+                <div style={{ fontFamily: 'var(--sans)', fontSize: '0.65rem', color: 'var(--gold)', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase' }}>Powered by Academic Origin</div>
               </div>
             </div>
-            <p className="font-patrick text-[14px] text-[#aaa59a] leading-relaxed mb-5">
-              Located inside Ursuline Convent School & Inter College, Ranchi. Providing quality coaching in a safe, disciplined, and caring environment since 2014.
+            <p style={{ fontFamily: 'var(--sans)', fontSize: '0.88rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.8, marginBottom: '20px' }}>
+              Premium girls-only coaching institute near Ursuline Convent School, Purliya Road, Ranchi. Academic excellence since 2026.
             </p>
-            <div className="flex gap-3">
-              <a
-                href="#demo"
-                className="inline-flex items-center gap-2 font-kalam text-[14px] bg-[#ff4d4d] text-white px-4 py-2 border-2 border-[#fdfbf7] shadow-[2px_2px_0px_0px_#fdfbf7]"
-                style={{ borderRadius: '255px 15px 225px 15px / 15px 225px 15px 255px' }}
-              >
-                Book Free Demo <ArrowRight size={14} />
-              </a>
+            <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+              <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#22c55e' }} />
+              <span style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', color: 'rgba(255,255,255,0.55)' }}>Admissions Open · 2026–27</span>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-kalam text-[20px] text-[#fdfbf7] mb-4 pb-2 border-b-2 border-dashed border-[#aaa59a] border-opacity-30">
+            <h4 style={{ fontFamily: 'var(--serif)', fontSize: '0.95rem', fontWeight: 700, color: 'var(--gold-light)', marginBottom: '18px', paddingBottom: '10px', borderBottom: '1px solid rgba(201,168,76,0.2)' }}>
               Quick Links
             </h4>
-            <ul className="flex flex-col gap-2">
-              {footerLinks.map(({ label, href }) => (
+            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              {quickLinks.map(({ label, href }) => (
                 <li key={label}>
-                  <a
-                    href={href}
-                    className="font-patrick text-[14px] text-[#aaa59a] hover:text-[#ff4d4d] transition-colors flex items-center gap-2 group"
+                  <a href={href} style={{
+                    fontFamily: 'var(--sans)', fontSize: '0.88rem', color: 'rgba(255,255,255,0.6)',
+                    textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '6px', transition: 'color 0.2s',
+                  }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--gold-light)'; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.6)'; }}
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#ff4d4d] opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
-                    {label}
+                    <ArrowRight size={12} style={{ flexShrink: 0, opacity: 0.5 }} /> {label}
                   </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Courses */}
+          <div>
+            <h4 style={{ fontFamily: 'var(--serif)', fontSize: '0.95rem', fontWeight: 700, color: 'var(--gold-light)', marginBottom: '18px', paddingBottom: '10px', borderBottom: '1px solid rgba(201,168,76,0.2)' }}>
+              Our Courses
+            </h4>
+            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              {courses.map(c => (
+                <li key={c} style={{ fontFamily: 'var(--sans)', fontSize: '0.85rem', color: 'rgba(255,255,255,0.55)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: 'var(--gold)', flexShrink: 0, display: 'inline-block' }} />
+                  {c}
                 </li>
               ))}
             </ul>
@@ -74,48 +90,43 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-kalam text-[20px] text-[#fdfbf7] mb-4 pb-2 border-b-2 border-dashed border-[#aaa59a] border-opacity-30">
-              Contact Us
+            <h4 style={{ fontFamily: 'var(--serif)', fontSize: '0.95rem', fontWeight: 700, color: 'var(--gold-light)', marginBottom: '18px', paddingBottom: '10px', borderBottom: '1px solid rgba(201,168,76,0.2)' }}>
+              Contact
             </h4>
-            <div className="flex flex-col gap-4">
-              <div className="flex gap-3 items-start">
-                <MapPin size={16} className="text-[#ff4d4d] mt-0.5 flex-shrink-0" />
-                <span className="font-patrick text-[14px] text-[#aaa59a] leading-relaxed">
-                  Inside Ursuline Convent School & Inter College, Ranchi, Jharkhand — 834001
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                <MapPin size={15} style={{ color: 'var(--gold)', marginTop: '2px', flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--sans)', fontSize: '0.85rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.7 }}>
+                  Near Ursuline Convent School, Purliya Road, Ranchi, Jharkhand
                 </span>
               </div>
-              <div className="flex gap-3 items-center">
-                <Phone size={16} className="text-[#2d5da1] flex-shrink-0" />
-                <a href="tel:+919798681755" className="font-patrick text-[14px] text-[#aaa59a] hover:text-white transition-colors">
-                  +91 97986 81755
+              <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+                <Phone size={15} style={{ color: 'var(--gold)', flexShrink: 0 }} />
+                <a href="tel:+917979000000" style={{ fontFamily: 'var(--sans)', fontSize: '0.85rem', color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}>
+                  +91 79790 00000
                 </a>
               </div>
-              <div className="flex gap-3 items-center">
-                <Mail size={16} className="text-[#c9a800] flex-shrink-0" />
-                <a href="mailto:ursulinestudycentre@gmail.com" className="font-patrick text-[14px] text-[#aaa59a] hover:text-white transition-colors break-all">
+              <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+                <Mail size={15} style={{ color: 'var(--gold)', flexShrink: 0 }} />
+                <a href="mailto:ursulinestudycentre@gmail.com" style={{ fontFamily: 'var(--sans)', fontSize: '0.82rem', color: 'rgba(255,255,255,0.55)', textDecoration: 'none', wordBreak: 'break-all' }}>
                   ursulinestudycentre@gmail.com
                 </a>
               </div>
             </div>
 
-            {/* Admission CTA */}
-            <div
-              className="mt-6 bg-[#ff4d4d] bg-opacity-10 border-2 border-[#ff4d4d] border-opacity-40 p-4"
-              style={{ borderRadius: '20px 8px 20px 8px / 8px 20px 8px 20px', borderStyle: 'dashed' }}
-            >
-              <div className="stamp inline-block mb-2">Admissions Open</div>
-              <p className="font-patrick text-[13px] text-[#fdfbf7] opacity-80">Batch 2025–26. Limited Seats. Book your demo now!</p>
-            </div>
+            <a href="#contact" className="btn-gold" style={{ marginTop: '24px', display: 'block', textAlign: 'center', width: '100%', justifyContent: 'center' }}>
+              Apply Now →
+            </a>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-6 border-t-2 border-dashed border-[#aaa59a] border-opacity-20 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="font-patrick text-[13px] text-[#aaa59a] text-center sm:text-left">
-            © 2025 Ursuline Study Centre. All rights reserved.
+        <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '24px', display: 'flex', flexWrap: 'wrap', gap: '12px', justifyContent: 'space-between', alignItems: 'center' }}>
+          <p style={{ fontFamily: 'var(--sans)', fontSize: '0.8rem', color: 'rgba(255,255,255,0.35)' }}>
+            © 2026 Ursuline Study Centre. All Rights Reserved.
           </p>
-          <p className="font-patrick text-[13px] text-[#aaa59a] flex items-center gap-1.5">
-            Made with <Heart size={12} fill="#ff4d4d" color="#ff4d4d" className="animate-pulse" /> for students of Ranchi
+          <p style={{ fontFamily: 'var(--sans)', fontSize: '0.8rem', color: 'rgba(255,255,255,0.35)' }}>
+            Powered by <span style={{ color: 'var(--gold)' }}>Academic Origin</span>
           </p>
         </div>
       </div>
