@@ -6,31 +6,37 @@ const reasons = [
   {
     icon: <ShieldCheck size={22} strokeWidth={1.8} />,
     title: 'Only Girls Institute',
+    hindi: 'सुरक्षित एवं अनुशासित वातावरण',
     desc: 'A safe, focused, and distraction-free environment built exclusively for girl students — where every student feels secure and respected.',
   },
   {
     icon: <BookOpen size={22} strokeWidth={1.8} />,
     title: 'Dual Board — JAC & CBSE',
+    hindi: 'दोनों बोर्ड की तैयारी',
     desc: 'We prepare students for both JAC and CBSE boards, giving them flexibility and comprehensive exam coverage.',
   },
   {
     icon: <Users size={22} strokeWidth={1.8} />,
     title: 'PhD & M.Tech Faculty',
+    hindi: 'अनुभवी एवं योग्य शिक्षक',
     desc: 'Our teaching team includes Ph.D. holders and M.Tech qualified professionals with 5–12 years of coaching experience.',
   },
   {
     icon: <Globe size={22} strokeWidth={1.8} />,
     title: 'Bilingual Teaching',
+    hindi: 'हिन्दी + English में पढ़ाई',
     desc: 'We teach in both English and Hindi so every student — regardless of background — grasps concepts with clarity and confidence.',
   },
   {
     icon: <Layers size={22} strokeWidth={1.8} />,
     title: 'Academic + Vocational Combo',
+    hindi: 'शैक्षिक एवं कौशल शिक्षा',
     desc: 'Unique combination of board coaching alongside AI, Programming, DCA, Tally, and Social Media — building career-ready graduates.',
   },
   {
     icon: <MapPin size={22} strokeWidth={1.8} />,
     title: 'Near Ursuline Convent School',
+    hindi: 'विश्वसनीय स्थान पर स्थित',
     desc: 'Conveniently located near the prestigious Ursuline Convent campus, Purliya Road — trusted by local families for its safe, accessible location.',
   },
 ];
@@ -67,7 +73,7 @@ export default function WhyChooseUs() {
 
         {/* Grid */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '20px' }}>
-          {reasons.map(({ icon, title, desc }, i) => (
+          {reasons.map(({ icon, title, hindi, desc }, i) => (
             <div key={title} style={{
               padding: '28px',
               border: '1px solid rgba(201,168,76,0.2)',
@@ -93,9 +99,14 @@ export default function WhyChooseUs() {
               }}>
                 {icon}
               </div>
-              <h3 style={{ fontFamily: 'var(--serif)', fontSize: '1.05rem', fontWeight: 700, color: 'white', marginBottom: '10px' }}>
+              <h3 style={{ fontFamily: 'var(--serif)', fontSize: '1.05rem', fontWeight: 700, color: 'white', marginBottom: '4px' }}>
                 {title}
               </h3>
+              {hindi && (
+                <div style={{ fontFamily: 'var(--sans)', fontSize: '0.72rem', color: 'var(--gold)', marginBottom: '10px', letterSpacing: '0.02em' }}>
+                  {hindi}
+                </div>
+              )}
               <p style={{ fontFamily: 'var(--sans)', fontSize: '0.88rem', color: 'rgba(255,255,255,0.65)', lineHeight: 1.75 }}>
                 {desc}
               </p>

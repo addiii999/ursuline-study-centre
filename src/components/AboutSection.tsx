@@ -74,6 +74,9 @@ export default function AboutSection() {
               <p className="body-md">
                 "I founded Ursuline Study Centre with one clear purpose — to create a space where every girl student can study without fear, distraction, or compromise. Excellence is not a privilege; it is a right. We are here to make it accessible."
               </p>
+              <p style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: '0.88rem', color: 'var(--gold-dark)', marginTop: '12px', lineHeight: 1.6 }}>
+                "शिक्षा केवल पढ़ाई नहीं, भविष्य निर्माण है।"
+              </p>
             </div>
 
             {/* Sister institute card */}

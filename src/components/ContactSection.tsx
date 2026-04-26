@@ -69,6 +69,9 @@ export default function ContactSection() {
           <p className="body-lg" style={{ marginTop: '16px', maxWidth: '460px', margin: '16px auto 0' }}>
             Fill in the form below and our team will reach out within 24 hours.
           </p>
+          <p style={{ fontFamily: 'var(--sans)', fontSize: '0.82rem', color: 'var(--gold-dark)', marginTop: '10px', letterSpacing: '0.04em' }}>
+            आपकी सफलता हमारी प्राथमिकता है
+          </p>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px', alignItems: 'start' }}>

@@ -125,6 +125,9 @@ export default function Footer() {
           <p style={{ fontFamily: 'var(--sans)', fontSize: '0.8rem', color: 'rgba(255,255,255,0.35)' }}>
             © 2026 Ursuline Study Centre. All Rights Reserved.
           </p>
+          <p style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: '0.8rem', color: 'var(--gold)', letterSpacing: '0.06em' }}>
+            ज्ञान · अनुशासन · सफलता
+          </p>
           <p style={{ fontFamily: 'var(--sans)', fontSize: '0.8rem', color: 'rgba(255,255,255,0.35)' }}>
             Powered by <span style={{ color: 'var(--gold)' }}>Academic Origin</span>
           </p>

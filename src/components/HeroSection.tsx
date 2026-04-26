@@ -54,8 +54,11 @@ export default function HeroSection() {
           <h1 className="text-shimmer animate-fade-up delay-1" style={{ fontSize: 'clamp(2.8rem, 7vw, 5rem)', fontWeight: 700, lineHeight: 1.05, marginBottom: '12px', fontFamily: 'var(--serif)' }}>
             Ursuline Study Centre
           </h1>
-          <p className="animate-fade-up delay-2" style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)', color: 'rgba(255,255,255,0.75)', marginBottom: '24px', fontWeight: 400 }}>
+          <p className="animate-fade-up delay-2" style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)', color: 'rgba(255,255,255,0.75)', marginBottom: '8px', fontWeight: 400 }}>
             Empowering Girls. Building Futures.
+          </p>
+          <p className="animate-fade-up delay-2" style={{ fontFamily: 'var(--sans)', fontSize: 'clamp(0.82rem, 1.5vw, 0.95rem)', color: 'rgba(201,168,76,0.7)', letterSpacing: '0.06em', marginBottom: '24px' }}>
+            बेटियों का भविष्य, हमारी ज़िम्मेदारी
           </p>
 
           {/* Gold divider */}
@@ -67,10 +70,13 @@ export default function HeroSection() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="animate-fade-up delay-4" style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '44px' }}>
+          <div className="animate-fade-up delay-4" style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '12px' }}>
             <a href="#contact" className="btn-gold" style={{ minWidth: '160px' }}>Apply Now</a>
             <a href="#courses" className="btn-outline" style={{ minWidth: '160px' }}>Know More</a>
           </div>
+          <p className="animate-fade-up delay-4" style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', color: 'rgba(201,168,76,0.55)', marginBottom: '44px', letterSpacing: '0.04em' }}>
+            आज ही अपना प्रवेश सुनिश्चित करें
+          </p>
 
           {/* Pill badges */}
           <div className="animate-fade-up delay-5" style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'center' }}>
