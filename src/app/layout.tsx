@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   description: "Ursuline Study Centre — only girls coaching for Classes 9–12. Science, Commerce, Humanities, JEE, NEET, CLAT & Vocational Courses. Located near Ursuline Convent School, Ranchi. Powered by Academic Origin.",
   keywords: "Ursuline Study Centre, Girls Coaching Ranchi, JEE NEET Coaching, Ursuline Convent, Academic Origin, PCM PCB Commerce",
   authors: [{ name: "Ursuline Study Centre" }],
+  icons: {
+    icon: ['/logo.jpeg?v=1'],
+    apple: ['/logo.jpeg?v=1'],
+  },
   openGraph: {
     title: "Ursuline Study Centre | Premium Girls Coaching — Ranchi",
     description: "Empowering Girls. Building Futures. Admissions Open 2026–27.",
