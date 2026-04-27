@@ -134,7 +134,7 @@ export default function HeroSection() {
                   <path d="M13.5 12.5L2.5 23.5L18 17L13.5 12.5Z" fill="#FF3A44"/>
                   <path d="M13.5 12.5L18 17L22 14.5L18 8L13.5 12.5Z" fill="#FFC900"/>
                 </svg>
-                Get Our App
+                Academic Origin App
               </a>
             </div>
 
@@ -142,7 +142,7 @@ export default function HeroSection() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
               <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#34d399', display: 'inline-block', flexShrink: 0 }} />
               <span style={{ fontFamily: 'var(--sans)', fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', letterSpacing: '0.04em' }}>
-                Official app available on Google Play - Free
+                Official learning app by Academic Origin - Free
               </span>
             </div>
           </div>

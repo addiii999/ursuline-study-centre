@@ -12,8 +12,8 @@ export default function FloatingWhatsApp() {
         target="_blank"
         rel="noopener noreferrer"
         className="fab-btn fab-playstore"
-        aria-label="Download our Android App"
-        title="Download our official App on Google Play"
+        aria-label="Academic Origin Learning App"
+        title="Official learning app by Academic Origin"
       >
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M2.5 1.5L13.5 12.5L2.5 23.5V1.5Z" fill="#00A0FF" />
