@@ -301,26 +301,26 @@ select.input-premium { cursor: pointer; appearance: none; background-image: url(
 .visionary-banner::before {
   content: '';
   position: absolute;
-  top: -50%; left: -50%;
-  width: 200%; height: 200%;
+  top: -100%; left: -100%;
+  width: 300%; height: 300%;
   background: conic-gradient(
     transparent,
-    #D3B037 10%, /* Accent Gold */
-    transparent 20%,
-    transparent 50%,
-    #E27D60 60%, /* Terracotta */
-    transparent 70%
+    #D3B037 5%, /* Accent Gold */
+    transparent 15%,
+    transparent 45%,
+    #E27D60 55%, /* Terracotta */
+    transparent 65%
   );
-  animation: borderRotate 4s linear infinite;
+  animation: borderRotate 3s linear infinite;
   z-index: -2;
 }
 
 .visionary-banner::after {
   content: '';
   position: absolute;
-  inset: 1.5px; /* Border thickness */
+  inset: 2px; /* Thicker border (was 1.5px) */
   background: #0984E3;
-  border-radius: 6.5px;
+  border-radius: 6px;
   z-index: -1;
 }
 

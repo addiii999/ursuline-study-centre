@@ -52,14 +52,17 @@ export default function HeroSection() {
 
           {/* Main Headline */}
           <h1 className="text-shimmer animate-fade-up delay-1" style={{ 
-            fontSize: 'clamp(3.5rem, 9vw, 6.5rem)', 
+            fontSize: 'clamp(2.5rem, 8.5vw, 6.5rem)', 
             fontWeight: 400, 
             lineHeight: 1, 
             marginBottom: '16px', 
             fontFamily: '"Haettenschweiler", "Impact", "Arial Narrow Bold", sans-serif',
             letterSpacing: '0.04em',
             textShadow: '0 4px 12px rgba(0,0,0,0.3)',
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            whiteSpace: 'nowrap',
+            display: 'inline-block',
+            width: '100%'
           }}>
             Ursuline Study Centre
           </h1>
