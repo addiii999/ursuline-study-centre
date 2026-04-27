@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useRef } from 'react';
-import { MapPin, Phone, MessageCircle, CheckCircle, AlertCircle, Loader } from 'lucide-react';
+import { MapPin, Phone, Mail, MessageCircle, CheckCircle, AlertCircle, Loader } from 'lucide-react';
 
 const classes = ['Class 9', 'Class 10', 'Class 11', 'Class 12', 'Dropper'];
 const streams = ['Science (PCM)', 'Science (PCB)', 'Commerce', 'Humanities', 'Vocational Course'];
@@ -103,6 +103,17 @@ export default function ContactSection() {
                         +91 62068 74337
                       </a>
                     </div>
+                  </div>
+                </div>
+                <div style={{ display: 'flex', gap: '14px', alignItems: 'center' }}>
+                  <div style={{ width: '36px', height: '36px', borderRadius: '8px', background: 'rgba(128,0,0,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--maroon)', flexShrink: 0 }}>
+                    <Mail size={16} />
+                  </div>
+                  <div>
+                    <div style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', fontWeight: 700, color: 'var(--gray-text)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '3px' }}>Email Address</div>
+                    <a href="mailto:ursulinestudycentre@gmail.com" style={{ fontFamily: 'var(--sans)', fontSize: '0.92rem', color: 'var(--black)', textDecoration: 'none', fontWeight: 600, wordBreak: 'break-all' }}>
+                      ursulinestudycentre@gmail.com
+                    </a>
                   </div>
                 </div>
               </div>

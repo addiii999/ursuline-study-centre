@@ -148,7 +148,7 @@ const PrivacyPolicy = () => {
                       <div style={{ width: '36px', height: '36px', borderRadius: '8px', background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(128,0,0,0.06)', flexShrink: 0 }}>
                         <Mail size={16} style={{ color: 'var(--maroon)' }} />
                       </div>
-                      <span style={{ fontFamily: 'var(--sans)', fontSize: '0.9rem', color: 'var(--maroon)', fontWeight: 500 }}>ursulinestudycentre@gmail.com</span>
+                      <a href="mailto:ursulinestudycentre@gmail.com" style={{ fontFamily: 'var(--sans)', fontSize: '0.9rem', color: 'var(--maroon)', fontWeight: 500, textDecoration: 'none', wordBreak: 'break-all' }}>ursulinestudycentre@gmail.com</a>
                     </div>
                   </div>
                 </div>
