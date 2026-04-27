@@ -50,19 +50,36 @@ export default function ContactSection() {
 
     setStatus('loading');
     try {
-      // Store in localStorage for admin review (frontend-only CRM)
+      // 1. Real Email Notification to Institute (FormSubmit.co API)
+      await fetch("https://formsubmit.co/ajax/ursulinestudycentre@gmail.com", {
+        method: "POST",
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            _subject: `New Admission Enquiry from ${form.name}`,
+            Name: form.name,
+            Phone: `+91 ${form.phone}`,
+            Class: form.className,
+            Stream: form.stream,
+            Message: form.message || 'No message provided'
+        })
+      });
+
+      // 2. Admin-Ready Lead Storage (Frontend CRM Prep)
       const leads = JSON.parse(localStorage.getItem('usc_leads') || '[]');
-      leads.push({ ...form, phone: `+91 ${form.phone}`, submittedAt: new Date().toISOString(), id: Date.now() });
+      leads.push({ ...form, phone: `+91 ${form.phone}`, submittedAt: new Date().toISOString(), id: Date.now(), status: 'new' });
       localStorage.setItem('usc_leads', JSON.stringify(leads));
+      
       setLastSubmit();
-      await new Promise(r => setTimeout(r, 900)); // UX delay
       setStatus('success');
     } catch {
       setStatus('error');
     }
   };
 
-  const waMessage = encodeURIComponent(`Hi, I would like to enquire about admission to Ursuline Study Centre.\n\nName: ${form.name || '(not filled)'}\nPhone: +91 ${form.phone || '(not filled)'}\nClass: ${form.className || '(not filled)'}\nStream: ${form.stream || '(not filled)'}`);
+  const waMessage = encodeURIComponent(`*New Admission Enquiry*\n\n*Name:* ${form.name}\n*Phone:* +91 ${form.phone}\n*Class:* ${form.className}\n*Stream:* ${form.stream}\n*Message:* ${form.message || 'N/A'}\n\n_Hi, I have submitted my enquiry online. Please confirm._`);
 
   return (
     <section id="contact" className="section-py" style={{ background: 'var(--white)' }}>
@@ -155,22 +172,6 @@ export default function ContactSection() {
               </div>
             </div>
 
-            <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${waMessage}`}
-              target="_blank" rel="noopener noreferrer"
-              style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px',
-                padding: '16px', borderRadius: '8px', background: '#25D366', color: 'white',
-                fontFamily: 'var(--sans)', fontWeight: 600, fontSize: '0.95rem',
-                textDecoration: 'none', transition: 'all 0.2s',
-              }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#1ebe5b'; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = '#25D366'; }}
-            >
-              <MessageCircle size={20} />
-              Chat on WhatsApp
-            </a>
-
             <div style={{ fontSize: '0.78rem', color: 'var(--gray-text)', fontFamily: 'var(--sans)', textAlign: 'center', lineHeight: 1.6 }}>
               🕐 Office Hours: Mon-Sat, 9:00 AM - 6:00 PM<br />
               📍 Sunday: Closed
@@ -182,23 +183,33 @@ export default function ContactSection() {
             {status === 'success' ? (
               <div style={{
                 padding: '48px 32px', textAlign: 'center',
-                border: '1px solid #d4edda', borderRadius: '10px',
-                background: '#f0fff4',
+                border: '1px solid #d4edda', borderRadius: '16px',
+                background: '#f0fff4', boxShadow: '0 10px 30px rgba(34,197,94,0.08)'
               }}>
-                <CheckCircle size={52} style={{ color: '#22c55e', margin: '0 auto 16px' }} />
-                <h3 className="heading-md" style={{ marginBottom: '10px', color: '#166534' }}>Enquiry Received!</h3>
-                <p style={{ fontFamily: 'var(--sans)', fontSize: '0.95rem', color: '#166534', lineHeight: 1.7 }}>
-                  Thank you, <strong>{form.name}</strong>! Our team will contact you on <strong>+91 {form.phone}</strong> within 24 hours.
+                <div style={{ width: '64px', height: '64px', background: '#22c55e', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', boxShadow: '0 4px 15px rgba(34,197,94,0.3)' }}>
+                  <CheckCircle size={32} style={{ color: 'white' }} />
+                </div>
+                <h3 className="heading-md" style={{ marginBottom: '12px', color: '#166534' }}>Enquiry Successfully Sent!</h3>
+                <p style={{ fontFamily: 'var(--sans)', fontSize: '0.95rem', color: '#166534', lineHeight: 1.7, marginBottom: '32px' }}>
+                  Thank you, <strong>{form.name}</strong>. Your details have been delivered to our administration team.
                 </p>
-                <div style={{ marginTop: '20px' }}>
-                  <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi, I just submitted an enquiry for ${form.name} for ${form.stream} class ${form.className}. Phone: +91 ${form.phone}`}
+                
+                <div style={{ padding: '24px', background: 'white', borderRadius: '12px', border: '1px solid rgba(34,197,94,0.2)' }}>
+                  <p style={{ fontFamily: 'var(--sans)', fontSize: '0.95rem', color: 'var(--black)', marginBottom: '16px', fontWeight: 700 }}>
+                    Fast-Track Your Admission:
+                  </p>
+                  <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${waMessage}`}
                     target="_blank" rel="noopener noreferrer"
                     style={{
-                      display: 'inline-flex', alignItems: 'center', gap: '8px',
-                      padding: '10px 20px', borderRadius: '6px', background: '#25D366', color: 'white',
-                      fontFamily: 'var(--sans)', fontWeight: 600, fontSize: '0.88rem', textDecoration: 'none',
-                    }}>
-                    <MessageCircle size={16} /> Connect on WhatsApp
+                      display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px',
+                      padding: '16px 32px', borderRadius: '50px', background: '#25D366', color: 'white',
+                      fontFamily: 'var(--sans)', fontWeight: 700, fontSize: '1.05rem', textDecoration: 'none',
+                      boxShadow: '0 6px 20px rgba(37,211,102,0.3)', transition: 'all 0.3s ease', width: '100%'
+                    }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 25px rgba(37,211,102,0.4)'; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 6px 20px rgba(37,211,102,0.3)'; }}
+                  >
+                    <MessageCircle size={22} /> Confirm on WhatsApp
                   </a>
                 </div>
               </div>
