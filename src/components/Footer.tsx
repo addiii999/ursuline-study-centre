@@ -149,7 +149,7 @@ export default function Footer() {
           <p style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: '0.8rem', color: 'var(--gold)', letterSpacing: '0.06em' }}>
             ज्ञान · अनुशासन · सफलता
           </p>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: { base: 'center', md: 'flex-end' }, gap: '4px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '4px' }}>
             <p style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', color: 'rgba(255,255,255,0.35)' }}>
               Powered by <span style={{ color: 'var(--gold)' }}>Academic Origin</span>
             </p>
