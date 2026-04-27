@@ -97,6 +97,15 @@ export default function YoutubeSection() {
           </a>
         </div>
 
+        {/* Latest Sessions Label */}
+        <div style={{ marginBottom: '32px', display: 'flex', alignItems: 'center', gap: '16px' }}>
+          <div style={{ flex: 1, height: '1px', background: 'linear-gradient(90deg, transparent, rgba(0,0,0,0.08))' }} />
+          <span style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', fontWeight: 700, color: 'var(--gray-text)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>
+            Latest Academic Guidance
+          </span>
+          <div style={{ flex: 1, height: '1px', background: 'linear-gradient(90deg, rgba(0,0,0,0.08), transparent)' }} />
+        </div>
+
         {/* Video Grid */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
           {featuredVideos.map((video) => {
