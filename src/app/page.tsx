@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
+import FounderSection from '@/components/FounderSection';
 import CoursesSection from '@/components/CoursesSection';
 import FacultySection from '@/components/FacultySection';
 import WhyChooseUs from '@/components/WhyChooseUs';
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <AboutSection />
+      <FounderSection />
       <CoursesSection />
       <FacultySection />
       <WhyChooseUs />
