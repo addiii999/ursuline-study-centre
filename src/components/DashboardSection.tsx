@@ -28,7 +28,7 @@ export default function DashboardSection() {
           Student Performance Dashboard
         </h2>
         <p className="text-white/40 mt-4 max-w-lg mx-auto text-xs sm:text-sm font-[family-name:var(--font-inter)]">
-          Monitor every student's journey in real-time — test scores, attendance, and progress all in one place.
+          Monitor every student's journey in real-time - test scores, attendance, and progress all in one place.
         </p>
       </div>
 

@@ -21,7 +21,7 @@ export default function AboutSection() {
 
         {/* Two-column layout */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px', alignItems: 'start' }}>
-          {/* Left — About USC */}
+          {/* Left - About USC */}
           <div>
             <h3 className="heading-md" style={{ marginBottom: '16px', color: 'var(--maroon)' }}>
               Ursuline Study Centre
@@ -30,10 +30,10 @@ export default function AboutSection() {
               Ursuline Study Centre is a premium, girls-only coaching institution established in <strong>2026</strong>, located near the prestigious <strong>Ursuline Convent School & Inter College</strong>, Purliya Road, Ranchi, Jharkhand.
             </p>
             <p className="body-lg" style={{ marginBottom: '16px' }}>
-              We offer a unique combination of academic, competitive, and vocational education — all delivered by experienced faculty in a safe, disciplined, and nurturing environment designed specifically for girls.
+              We offer a unique combination of academic, competitive, and vocational education - all delivered by experienced faculty in a safe, disciplined, and nurturing environment designed specifically for girls.
             </p>
             <p className="body-lg" style={{ marginBottom: '24px' }}>
-              Our bilingual teaching methodology (English + Hindi) ensures every student — regardless of background — can grasp concepts clearly and perform confidently.
+              Our bilingual teaching methodology (English + Hindi) ensures every student - regardless of background - can grasp concepts clearly and perform confidently.
             </p>
 
             {/* Info chips */}
@@ -60,7 +60,7 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Right — Founder + Sister Institute */}
+          {/* Right - Founder + Sister Institute */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
             {/* Founder card */}
             <div style={{
@@ -78,7 +78,7 @@ export default function AboutSection() {
                 Mathematics Expert · JEE Faculty
               </div>
               <p className="body-md">
-                "I founded Ursuline Study Centre with one clear purpose — to create a space where every girl student can study without fear, distraction, or compromise. Excellence is not a privilege; it is a right. We are here to make it accessible."
+                "I founded Ursuline Study Centre with one clear purpose - to create a space where every girl student can study without fear, distraction, or compromise. Excellence is not a privilege; it is a right. We are here to make it accessible."
               </p>
               <p style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: '0.88rem', color: 'var(--gold-dark)', marginTop: '12px', lineHeight: 1.6 }}>
                 "शिक्षा केवल पढ़ाई नहीं, भविष्य निर्माण है।"

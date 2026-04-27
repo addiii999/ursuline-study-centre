@@ -2,9 +2,9 @@ import React from 'react';
 import { CheckCircle } from 'lucide-react';
 
 const feeRows = [
-  { stream: 'Science — PCM', fee: '₹15,000/-', duration: 'Per Year', session: '2026–27' },
-  { stream: 'Science — PCB', fee: '₹15,000/-', duration: 'Per Year', session: '2026–27' },
-  { stream: 'Commerce', fee: '₹15,000/-', duration: 'Per Year', session: '2026–27' },
+  { stream: 'Science - PCM', fee: '₹15,000/-', duration: 'Per Year', session: '2026-27' },
+  { stream: 'Science - PCB', fee: '₹15,000/-', duration: 'Per Year', session: '2026-27' },
+  { stream: 'Commerce', fee: '₹15,000/-', duration: 'Per Year', session: '2026-27' },
 ];
 
 const steps = [
@@ -20,7 +20,7 @@ export default function AdmissionSection() {
       <div className="container">
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-          <span className="section-badge">Admissions 2026–27</span>
+          <span className="section-badge">Admissions 2026-27</span>
           <h2 className="heading-lg" style={{ marginTop: '16px', marginBottom: '12px' }}>Admission & Fee Structure</h2>
           <span className="gold-divider" style={{ display: 'block', margin: '0 auto' }} />
           <p className="body-lg" style={{ marginTop: '16px', maxWidth: '480px', margin: '16px auto 0' }}>
@@ -59,7 +59,7 @@ export default function AdmissionSection() {
               background: 'var(--gold-pale)', border: '1px solid var(--gold-light)', borderRadius: '8px',
             }}>
               <p style={{ fontFamily: 'var(--sans)', fontSize: '0.85rem', color: 'var(--gold-dark)', lineHeight: 1.6 }}>
-                <strong>Note:</strong> This is an only-girls institute. Admissions are open for Classes 9th to 12th for the 2026–27 session. Vocational course fees are separate — please enquire directly.
+                <strong>Note:</strong> This is an only-girls institute. Admissions are open for Classes 9th to 12th for the 2026-27 session. Vocational course fees are separate - please enquire directly.
               </p>
             </div>
           </div>

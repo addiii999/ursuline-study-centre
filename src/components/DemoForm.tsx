@@ -41,7 +41,7 @@ export default function DemoForm() {
             Book Your <span className="text-[#ff4d4d] squiggle-underline">Free Demo</span>
           </h2>
           <p className="font-patrick text-[17px] text-[#aaa59a] mt-4 max-w-xl mx-auto">
-            One session is all it takes to see the difference. Fill in the form below — our team will reach out within 24 hours.
+            One session is all it takes to see the difference. Fill in the form below - our team will reach out within 24 hours.
           </p>
         </div>
 

@@ -15,7 +15,7 @@ const navLinks = [
 ];
 
 const marqueeText = [
-  '📚 Admissions Open 2026–27 · प्रवेश प्रारंभ | Only Girls Institute',
+  '📚 Admissions Open 2026-27 · प्रवेश प्रारंभ | Only Girls Institute',
   '✨ Classes 9th to 12th | JAC & CBSE Boards',
   '🎯 JEE · NEET · CLAT · AI · Programming · DCA · Tally',
   '📍 Near Ursuline Convent School, Purliya Road, Ranchi',
@@ -156,7 +156,7 @@ export default function Navbar() {
               </a>
             ))}
             <a href="#contact" className="btn-gold" style={{ display: 'block', textAlign: 'center', marginTop: '16px' }} onClick={() => setOpen(false)}>
-              Apply Now — 2026–27
+              Apply Now - 2026-27
             </a>
           </div>
         )}

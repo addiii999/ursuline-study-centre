@@ -5,7 +5,7 @@ const pillBadges = [
   'Only Girls Institute',
   'JAC & CBSE Boards',
   'English + Hindi Medium',
-  'Classes 9–12',
+  'Classes 9-12',
 ];
 
 export default function HeroSection() {
@@ -47,7 +47,7 @@ export default function HeroSection() {
           }}>
             <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--gold)', display: 'inline-block' }} />
             <span style={{ fontFamily: 'var(--sans)', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.12em', color: 'var(--gold-light)', textTransform: 'uppercase' }}>
-              Admissions Open · 2026–27 Session
+              Admissions Open · 2026-27 Session
             </span>
           </div>
 
@@ -85,7 +85,7 @@ export default function HeroSection() {
 
           {/* Sub headline */}
           <p className="animate-fade-up delay-3" style={{ fontFamily: 'var(--sans)', fontSize: 'clamp(0.95rem, 2vw, 1.1rem)', color: 'rgba(255,255,255,0.72)', maxWidth: '600px', margin: '0 auto 24px', lineHeight: 1.8 }}>
-            A premium, girls-only coaching institute located near Ursuline Convent School, Purliya Road, Ranchi — offering academic, competitive, and vocational excellence.
+            A premium, girls-only coaching institute located near Ursuline Convent School, Purliya Road, Ranchi - offering academic, competitive, and vocational excellence.
           </p>
 
           {/* Powered By Trust Badge */}

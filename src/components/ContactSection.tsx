@@ -7,7 +7,7 @@ const streams  = ['Science (PCM)', 'Science (PCB)', 'Commerce', 'Humanities', 'V
 
 type Status = 'idle' | 'loading' | 'success' | 'error' | 'cooldown';
 
-const WHATSAPP_NUMBER = '917979000000'; // placeholder — replace with real number
+const WHATSAPP_NUMBER = '917979000000'; // placeholder - replace with real number
 
 function getLastSubmit(): number {
   try { return parseInt(localStorage.getItem('usc_last_submit') || '0', 10); } catch { return 0; }
@@ -120,7 +120,7 @@ export default function ContactSection() {
             </a>
 
             <div style={{ fontSize: '0.78rem', color: 'var(--gray-text)', fontFamily: 'var(--sans)', textAlign: 'center', lineHeight: 1.6 }}>
-              🕐 Office Hours: Mon–Sat, 9:00 AM – 6:00 PM<br />
+              🕐 Office Hours: Mon-Sat, 9:00 AM - 6:00 PM<br />
               📍 Sunday: Closed
             </div>
           </div>

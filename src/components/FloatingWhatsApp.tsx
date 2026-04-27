@@ -3,7 +3,7 @@ import React from 'react';
 const WHATSAPP_NUMBER = '917979000000'; // placeholder
 
 export default function FloatingWhatsApp() {
-  const message = encodeURIComponent('Hi! I would like to enquire about admissions at Ursuline Study Centre for the 2026–27 session.');
+  const message = encodeURIComponent('Hi! I would like to enquire about admissions at Ursuline Study Centre for the 2026-27 session.');
   return (
     <a
       href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`}

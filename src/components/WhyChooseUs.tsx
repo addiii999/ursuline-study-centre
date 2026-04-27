@@ -7,11 +7,11 @@ const reasons = [
     icon: <ShieldCheck size={22} strokeWidth={1.8} />,
     title: 'Only Girls Institute',
     hindi: 'सुरक्षित एवं अनुशासित वातावरण',
-    desc: 'A safe, focused, and distraction-free environment built exclusively for girl students — where every student feels secure and respected.',
+    desc: 'A safe, focused, and distraction-free environment built exclusively for girl students - where every student feels secure and respected.',
   },
   {
     icon: <BookOpen size={22} strokeWidth={1.8} />,
-    title: 'Dual Board — JAC & CBSE',
+    title: 'Dual Board - JAC & CBSE',
     hindi: 'दोनों बोर्ड की तैयारी',
     desc: 'We prepare students for both JAC and CBSE boards, giving them flexibility and comprehensive exam coverage.',
   },
@@ -19,25 +19,25 @@ const reasons = [
     icon: <Users size={22} strokeWidth={1.8} />,
     title: 'PhD & M.Tech Faculty',
     hindi: 'अनुभवी एवं योग्य शिक्षक',
-    desc: 'Our teaching team includes Ph.D. holders and M.Tech qualified professionals with 5–12 years of coaching experience.',
+    desc: 'Our teaching team includes Ph.D. holders and M.Tech qualified professionals with 5-12 years of coaching experience.',
   },
   {
     icon: <Globe size={22} strokeWidth={1.8} />,
     title: 'Bilingual Teaching',
     hindi: 'हिन्दी + English में पढ़ाई',
-    desc: 'We teach in both English and Hindi so every student — regardless of background — grasps concepts with clarity and confidence.',
+    desc: 'We teach in both English and Hindi so every student - regardless of background - grasps concepts with clarity and confidence.',
   },
   {
     icon: <Layers size={22} strokeWidth={1.8} />,
     title: 'Academic + Vocational Combo',
     hindi: 'शैक्षिक एवं कौशल शिक्षा',
-    desc: 'Unique combination of board coaching alongside AI, Programming, DCA, Tally, and Social Media — building career-ready graduates.',
+    desc: 'Unique combination of board coaching alongside AI, Programming, DCA, Tally, and Social Media - building career-ready graduates.',
   },
   {
     icon: <MapPin size={22} strokeWidth={1.8} />,
     title: 'Near Ursuline Convent School',
     hindi: 'विश्वसनीय स्थान पर स्थित',
-    desc: 'Conveniently located near the prestigious Ursuline Convent campus, Purliya Road — trusted by local families for its safe, accessible location.',
+    desc: 'Conveniently located near the prestigious Ursuline Convent campus, Purliya Road - trusted by local families for its safe, accessible location.',
   },
 ];
 

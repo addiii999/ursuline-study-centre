@@ -23,7 +23,7 @@ export default function ResultsSection() {
         <div className="text-center mb-14">
           <div className="inline-flex items-center gap-2 mb-4">
             <Trophy size={22} className="text-[#ff4d4d]" />
-            <span className="font-kalam text-[15px] text-[#ff4d4d]">— Proven Track Record —</span>
+            <span className="font-kalam text-[15px] text-[#ff4d4d]">- Proven Track Record -</span>
             <Trophy size={22} className="text-[#ff4d4d]" />
           </div>
           <h2 className="font-kalam text-[40px] sm:text-[52px] text-[#2d2d2d] leading-tight">

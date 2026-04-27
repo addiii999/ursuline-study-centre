@@ -22,7 +22,7 @@ export default function EnrollForm() {
 
   const classes = ["Class VI","Class VII","Class VIII","Class IX","Class X","Class XI","Class XII"];
   const subjects = ["Mathematics","Science","English","Social Studies","Commerce","All Subjects"];
-  const timeSlots = ["7:00 AM – 8:00 AM","8:00 AM – 9:00 AM","3:00 PM – 4:00 PM","4:00 PM – 5:00 PM","5:00 PM – 6:00 PM","6:00 PM – 7:00 PM"];
+  const timeSlots = ["7:00 AM - 8:00 AM","8:00 AM - 9:00 AM","3:00 PM - 4:00 PM","4:00 PM - 5:00 PM","5:00 PM - 6:00 PM","6:00 PM - 7:00 PM"];
 
   const validate = () => {
     const e: Record<string, string> = {};

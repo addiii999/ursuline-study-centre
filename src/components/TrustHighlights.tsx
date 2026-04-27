@@ -44,7 +44,7 @@ export default function TrustHighlights() {
           A Coaching Institute You Can <span className="squiggle-underline">Actually Trust</span>
         </h2>
         <p className="font-patrick text-[17px] text-[#5a5550] mt-4 max-w-2xl mx-auto">
-          We don't just teach — we create an environment where students feel safe, focused, and motivated to reach their full potential.
+          We don't just teach - we create an environment where students feel safe, focused, and motivated to reach their full potential.
         </p>
       </div>
 

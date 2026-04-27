@@ -68,7 +68,7 @@ export default function Footer() {
             </p>
             <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#22c55e' }} />
-              <span style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', color: 'rgba(255,255,255,0.55)' }}>Admissions Open · 2026–27</span>
+              <span style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', color: 'rgba(255,255,255,0.55)' }}>Admissions Open · 2026-27</span>
             </div>
           </div>
 

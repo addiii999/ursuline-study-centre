@@ -38,7 +38,7 @@ export default function ParentTrustSection() {
               A Place Parents Can <span className="squiggle-underline">Fully Trust</span>
             </h2>
             <p className="font-patrick text-[17px] text-[#5a5550] leading-relaxed mb-8">
-              We know that sending your child to a coaching centre is an act of trust. That's why we've built every part of Ursuline Study Centre with parents in mind — safety, transparency, and communication first.
+              We know that sending your child to a coaching centre is an act of trust. That's why we've built every part of Ursuline Study Centre with parents in mind - safety, transparency, and communication first.
             </p>
 
             {/* Contact info */}

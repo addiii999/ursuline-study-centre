@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: 'Mrs. Lata Sharma',
     role: 'Parent of Class 12 Student',
-    text: 'My daughter secured 94% in boards. The faculty here genuinely cares — they treat every student personally. Being inside the Convent campus gives us parents complete peace of mind.',
+    text: 'My daughter secured 94% in boards. The faculty here genuinely cares - they treat every student personally. Being inside the Convent campus gives us parents complete peace of mind.',
     stars: 5,
     emoji: '👩',
     rotate: '-rotate-1',
@@ -14,7 +14,7 @@ const testimonials = [
   {
     name: 'Riya Singh',
     role: 'NEET Aspirant, Batch 2024',
-    text: 'I cracked NEET with 610 marks! The biology sessions here are next level. I used to struggle with diagrams — now they\'re my strongest area. Thank you Ursuline Study Centre!',
+    text: 'I cracked NEET with 610 marks! The biology sessions here are next level. I used to struggle with diagrams - now they\'re my strongest area. Thank you Ursuline Study Centre!',
     stars: 5,
     emoji: '👧',
     rotate: 'rotate-1',
@@ -23,7 +23,7 @@ const testimonials = [
   {
     name: 'Mr. Deepak Kumar',
     role: 'Parent of JEE Student',
-    text: 'They don\'t just teach — they mentor. My son used to be anxious about JEE. After joining this centre, his confidence transformed completely. Highly recommended.',
+    text: 'They don\'t just teach - they mentor. My son used to be anxious about JEE. After joining this centre, his confidence transformed completely. Highly recommended.',
     stars: 5,
     emoji: '👨',
     rotate: '-rotate-1',
@@ -32,7 +32,7 @@ const testimonials = [
   {
     name: 'Ananya Devi',
     role: 'Class 12 Boards Topper',
-    text: 'The notes are the best I\'ve ever seen — handcrafted by teachers who actually understand what students struggle with. Small batches means I was never lost in the crowd.',
+    text: 'The notes are the best I\'ve ever seen - handcrafted by teachers who actually understand what students struggle with. Small batches means I was never lost in the crowd.',
     stars: 5,
     emoji: '👧',
     rotate: 'rotate-2',
@@ -41,7 +41,7 @@ const testimonials = [
   {
     name: 'Mrs. Preethi Oraon',
     role: 'Parent, Foundation Batch',
-    text: 'My daughter is in class 9 and already solving problems that class 11 students struggle with. The foundation programme builds real skills — not just exam tricks.',
+    text: 'My daughter is in class 9 and already solving problems that class 11 students struggle with. The foundation programme builds real skills - not just exam tricks.',
     stars: 5,
     emoji: '👩',
     rotate: '-rotate-2',

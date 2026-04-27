@@ -6,8 +6,8 @@ const groups = [
     category: 'Academic Streams',
     badge: '📘 Academic',
     courses: [
-      { icon: <FlaskConical size={20} strokeWidth={2} />, name: 'Science — PCM', desc: 'Physics, Chemistry, Mathematics for Class 11 & 12.' },
-      { icon: <FlaskConical size={20} strokeWidth={2} />, name: 'Science — PCB', desc: 'Physics, Chemistry, Biology for medical aspirants.' },
+      { icon: <FlaskConical size={20} strokeWidth={2} />, name: 'Science - PCM', desc: 'Physics, Chemistry, Mathematics for Class 11 & 12.' },
+      { icon: <FlaskConical size={20} strokeWidth={2} />, name: 'Science - PCB', desc: 'Physics, Chemistry, Biology for medical aspirants.' },
       { icon: <BarChart3 size={20} strokeWidth={2} />, name: 'Commerce', desc: 'Accountancy, Business Studies, Economics, Maths.' },
       { icon: <BookOpen size={20} strokeWidth={2} />, name: 'Humanities', desc: 'History, Geography, Political Science, Economics.' },
     ],
@@ -27,7 +27,7 @@ const groups = [
     courses: [
       { icon: <Code2 size={20} strokeWidth={2} />, name: 'Artificial Intelligence (AI)', desc: 'Fundamentals of AI, ML concepts, and practical applications.' },
       { icon: <Code2 size={20} strokeWidth={2} />, name: 'Programming', desc: 'Python, C++ fundamentals for beginners and intermediate learners.' },
-      { icon: <Monitor size={20} strokeWidth={2} />, name: 'DCA — Diploma in Computer Applications', desc: 'Complete computer applications diploma program.' },
+      { icon: <Monitor size={20} strokeWidth={2} />, name: 'DCA - Diploma in Computer Applications', desc: 'Complete computer applications diploma program.' },
       { icon: <Calc size={20} strokeWidth={2} />, name: 'Tally', desc: 'Accounting software mastery for commerce and business.' },
       { icon: <Landmark size={20} strokeWidth={2} />, name: 'Social Media Handling', desc: 'Digital marketing, content strategy, and social media management.' },
     ],
@@ -46,7 +46,7 @@ export default function CoursesSection() {
           </h2>
           <span className="gold-divider" style={{ display: 'block', margin: '0 auto' }} />
           <p className="body-lg" style={{ marginTop: '16px', maxWidth: '520px', margin: '16px auto 0' }}>
-            Academic excellence meets career readiness — all under one roof.
+            Academic excellence meets career readiness - all under one roof.
           </p>
         </div>
 

@@ -10,14 +10,14 @@ export default function BentoGrid() {
           Everything You Need to Excel
         </h2>
         <p className="text-white/40 mt-4 max-w-lg mx-auto text-xs sm:text-sm font-[family-name:var(--font-inter)]">
-          Our system is built around the student — from progress tracking to personal mentoring.
+          Our system is built around the student - from progress tracking to personal mentoring.
         </p>
       </div>
 
       {/* Bento grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 auto-rows-auto">
 
-        {/* Big card — spans 2 cols, 2 rows on md */}
+        {/* Big card - spans 2 cols, 2 rows on md */}
         <div className="bento-card sm:col-span-2 md:row-span-2 p-6 sm:p-8 reveal floating" style={{ minHeight: "340px" }}>
           {/* Gradient accent top */}
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#ef233c] to-transparent opacity-50" />
@@ -104,7 +104,7 @@ export default function BentoGrid() {
           </div>
           <h3 className="font-[family-name:var(--font-manrope)] font-bold text-base sm:text-lg text-white mb-2">Doubt Solving</h3>
           <p className="text-white/40 text-xs sm:text-sm font-[family-name:var(--font-inter)] leading-relaxed">
-            Daily dedicated doubt sessions — no question goes unanswered.
+            Daily dedicated doubt sessions - no question goes unanswered.
           </p>
           <div className="mt-4 flex items-center gap-2">
             <span className="pill-green">Daily Sessions</span>
@@ -163,7 +163,7 @@ export default function BentoGrid() {
           </div>
           <h3 className="font-[family-name:var(--font-manrope)] font-bold text-base sm:text-lg text-white mb-2">Safe & Focused Campus</h3>
           <p className="text-white/40 text-xs sm:text-sm font-[family-name:var(--font-inter)] leading-relaxed">
-            Operating within the secure premises of Ursuline Convent — ensuring a disciplined environment ideal for girls.
+            Operating within the secure premises of Ursuline Convent - ensuring a disciplined environment ideal for girls.
           </p>
           <div className="mt-4">
             <span className="text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded-md bg-[#a855f7]/20 text-[#a855f7] border border-[#a855f7]/30">
