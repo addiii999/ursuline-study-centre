@@ -189,7 +189,7 @@ export default function Footer() {
                 onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.3)'; }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.15)'; }}
               >
-                Contact: 9798681756 | 9508639773
+                Contact: 9508639773
               </p>
             </div>
           </div>
