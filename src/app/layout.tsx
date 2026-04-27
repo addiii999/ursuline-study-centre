@@ -42,9 +42,68 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": ["EducationalOrganization", "LocalBusiness"],
+    "name": "Ursuline Study Centre",
+    "alternateName": "USC Ranchi",
+    "description": "Premium girls-only coaching institute in Ranchi for Classes 9-12 (JAC & CBSE). Specialists in Science, Commerce, Humanities, JEE, NEET, and CLAT. Guided by Academic Origin.",
+    "url": "https://ursulinstudycentre.in",
+    "logo": "https://ursulinstudycentre.in/logo.jpeg",
+    "image": "https://ursulinstudycentre.in/og-image.png",
+    "telephone": "+91-95075-89503",
+    "email": "ursulinestudycentre@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Near Ursuline Convent School & Inter College, Purliya Road",
+      "addressLocality": "Ranchi",
+      "addressRegion": "Jharkhand",
+      "postalCode": "834001",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "23.370321",
+      "longitude": "85.330689"
+    },
+    "hasMap": "https://maps.app.goo.gl/cjRX1kb3UhFfGSfx9",
+    "founder": {
+      "@type": "Person",
+      "name": "Abhishek Pathak",
+      "jobTitle": "Founder & Director"
+    },
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Academic Origin"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "sameAs": [
+      "https://www.youtube.com/@academicorigin",
+      "https://wa.me/919507589503"
+    ]
+  };
+
   return (
     <html lang="en" className="scroll-smooth">
-      <body>{children}</body>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
