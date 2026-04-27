@@ -5,6 +5,8 @@ import FounderSection from '@/components/FounderSection';
 import CoursesSection from '@/components/CoursesSection';
 import FacultySection from '@/components/FacultySection';
 import WhyChooseUs from '@/components/WhyChooseUs';
+import ParentTrustSection from '@/components/ParentTrustSection';
+import ResultsSection from '@/components/ResultsSection';
 import YoutubeSection from '@/components/YoutubeSection';
 import AdmissionSection from '@/components/AdmissionSection';
 import ContactSection from '@/components/ContactSection';
@@ -21,6 +23,8 @@ export default function Home() {
       <CoursesSection />
       <FacultySection />
       <WhyChooseUs />
+      <ParentTrustSection />
+      <ResultsSection />
       <YoutubeSection />
       <AdmissionSection />
       <ContactSection />
