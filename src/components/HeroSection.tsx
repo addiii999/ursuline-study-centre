@@ -35,7 +35,7 @@ export default function HeroSection() {
       }} />
 
       <div className="container" style={{ position: 'relative', zIndex: 2, padding: '60px 24px' }}>
-        <div style={{ maxWidth: '820px', margin: '0 auto', textAlign: 'center' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
           {/* Eyebrow badge */}
           <div className="animate-fade-up" style={{
             display: 'inline-flex', alignItems: 'center', gap: '8px',
@@ -52,17 +52,16 @@ export default function HeroSection() {
 
           {/* Main Headline */}
           <h1 className="text-shimmer animate-fade-up delay-1" style={{ 
-            fontSize: 'clamp(2.5rem, 8.5vw, 6.5rem)', 
+            fontSize: 'clamp(2.2rem, 8vw, 6.2rem)', 
             fontWeight: 400, 
             lineHeight: 1, 
             marginBottom: '16px', 
             fontFamily: '"Haettenschweiler", "Impact", "Arial Narrow Bold", sans-serif',
-            letterSpacing: '0.04em',
+            letterSpacing: '0.03em',
             textShadow: '0 4px 12px rgba(0,0,0,0.3)',
             textTransform: 'uppercase',
             whiteSpace: 'nowrap',
             display: 'inline-block',
-            width: '100%'
           }}>
             Ursuline Study Centre
           </h1>
