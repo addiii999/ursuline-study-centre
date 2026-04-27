@@ -262,15 +262,30 @@ export default function Footer() {
               </div>
 
               {/* Developer Credit - Minimal */}
-              <p style={{
-                fontFamily: 'var(--sans)',
-                fontSize: '0.75rem',
-                color: 'rgba(255,255,255,0.3)',
-                margin: 0,
-                marginTop: '4px'
-              }}>
-                Designed by <span style={{ color: 'rgba(255,255,255,0.6)', fontWeight: 500 }}>Aayush</span>
-              </p>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginTop: '4px' }}>
+                <p style={{
+                  fontFamily: 'var(--sans)',
+                  fontSize: '0.75rem',
+                  color: 'rgba(255,255,255,0.3)',
+                  margin: 0
+                }}>
+                  Designed by <span style={{ color: 'rgba(255,255,255,0.6)', fontWeight: 500 }}>Aayush</span>
+                </p>
+                <a href="tel:+919508639773" style={{
+                  fontFamily: 'var(--sans)',
+                  fontSize: '0.65rem',
+                  color: 'rgba(255,255,255,0.2)',
+                  textDecoration: 'none',
+                  marginTop: '2px',
+                  letterSpacing: '0.04em',
+                  transition: 'color 0.2s ease'
+                }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.4)'; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.2)'; }}
+                >
+                  Contact: +91 95086 39773
+                </a>
+              </div>
             </div>
           </div>
         </div>
