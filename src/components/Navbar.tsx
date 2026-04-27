@@ -61,45 +61,35 @@ export default function Navbar() {
         <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '70px' }}>
           {/* Brand */}
           <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '16px', textDecoration: 'none' }}>
-            {/* Typographic Logo Mark */}
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-              <div style={{
-                fontFamily: 'var(--logo-font)',
-                fontSize: '2.5rem',
-                color: '#B91C1C', /* Strong red typography matching image */
-                lineHeight: 0.9,
-                letterSpacing: '0.04em',
-                transform: 'scaleY(1.05)',
-                textShadow: '0.5px 0.5px 0 rgba(0,0,0,0.05)',
-                marginBottom: '2px'
-              }}>
-                USC
-              </div>
-              <div style={{
-                backgroundColor: '#0EA5E9', /* Light blue pill */
-                color: 'var(--white)',
-                fontFamily: 'var(--sans)',
-                fontSize: '0.35rem',
-                fontWeight: 700,
-                letterSpacing: '0.08em',
-                textTransform: 'uppercase',
-                padding: '3px 6px',
-                borderRadius: '100px',
-                lineHeight: 1,
-                whiteSpace: 'nowrap',
-                boxShadow: '0 2px 4px rgba(14,165,233,0.15)'
-              }}>
-                Under the visionary guidance of Sr. Dr. Mary Grace
-              </div>
+            {/* Brand Logo */}
+            <div style={{
+              position: 'relative', 
+              width: 'clamp(50px, 8vw, 65px)', 
+              aspectRatio: '1/1',
+              borderRadius: '50%',
+              overflow: 'hidden', 
+              border: '1.5px solid var(--gold)',
+              flexShrink: 0,
+              boxShadow: '0 4px 12px rgba(0,0,0,0.08)'
+            }}>
+              <Image src="/logo.jpeg" alt="USC Logo" fill style={{ objectFit: 'cover' }} priority />
             </div>
 
             {/* Brand Text */}
-            <div style={{ paddingLeft: '16px', borderLeft: '1.5px solid var(--gray-border)' }}>
-              <div style={{ fontFamily: 'var(--serif)', fontWeight: 700, fontSize: '1rem', color: 'var(--black)', lineHeight: 1.1 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+              <div style={{ fontFamily: 'var(--serif)', fontWeight: 700, fontSize: 'clamp(0.95rem, 2vw, 1.15rem)', color: 'var(--black)', lineHeight: 1.1 }}>
                 Ursuline Study Centre
               </div>
-              <div style={{ fontFamily: 'var(--sans)', fontSize: '0.65rem', color: 'var(--gold-dark)', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', lineHeight: 1, marginTop: '4px' }}>
-                Powered by Academic Origin
+              <div style={{ 
+                fontFamily: 'var(--sans)', 
+                fontSize: 'clamp(0.6rem, 1.2vw, 0.7rem)', 
+                color: 'var(--gold-dark)', 
+                fontWeight: 600, 
+                letterSpacing: '0.06em', 
+                textTransform: 'uppercase', 
+                lineHeight: 1 
+              }}>
+                Under the visionary guidance of Sr. Dr. Mary Grace
               </div>
             </div>
           </Link>
