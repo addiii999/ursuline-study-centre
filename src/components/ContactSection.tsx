@@ -86,7 +86,37 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <div style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', fontWeight: 700, color: 'var(--gray-text)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '3px' }}>Address</div>
-                    <div style={{ fontFamily: 'var(--sans)', fontSize: '0.92rem', color: 'var(--black)', lineHeight: 1.6 }}>Near Ursuline Convent School & Inter College,<br />Purliya Road, Ranchi, Jharkhand</div>
+                    <a 
+                      href="https://maps.app.goo.gl/cjRX1kb3UhFfGSfx9" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      style={{ fontFamily: 'var(--sans)', fontSize: '0.92rem', color: 'var(--black)', lineHeight: 1.6, textDecoration: 'none', display: 'block', marginBottom: '8px' }}
+                      onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--maroon)'; }}
+                      onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'var(--black)'; }}
+                    >
+                      Near Ursuline Convent School & Inter College,<br />Purliya Road, Ranchi, Jharkhand
+                    </a>
+                    <a 
+                      href="https://maps.app.goo.gl/cjRX1kb3UhFfGSfx9" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="btn-premium"
+                      style={{ 
+                        display: 'inline-flex', 
+                        padding: '6px 14px', 
+                        fontSize: '0.75rem', 
+                        background: 'var(--white)', 
+                        color: 'var(--maroon)', 
+                        border: '1px solid var(--maroon)', 
+                        borderRadius: '6px',
+                        textDecoration: 'none',
+                        fontWeight: 700,
+                        gap: '6px',
+                        marginTop: '4px'
+                      }}
+                    >
+                      Visit Our Campus · Get Directions
+                    </a>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: '14px', alignItems: 'center' }}>

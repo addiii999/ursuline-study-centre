@@ -128,9 +128,14 @@ const PrivacyPolicy = () => {
                     </div>
                     <div>
                       <div style={{ fontFamily: 'var(--serif)', fontWeight: 700, color: 'var(--maroon)', marginBottom: '6px', fontSize: '1.05rem' }}>Ursuline Study Centre</div>
-                      <div style={{ fontFamily: 'var(--sans)', fontSize: '0.9rem', color: 'var(--maroon)', opacity: 0.85, lineHeight: 1.6 }}>
+                      <a 
+                        href="https://maps.app.goo.gl/cjRX1kb3UhFfGSfx9" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        style={{ fontFamily: 'var(--sans)', fontSize: '0.9rem', color: 'var(--maroon)', opacity: 0.85, lineHeight: 1.6, textDecoration: 'none', display: 'block' }}
+                      >
                         Near Ursuline Convent School & Inter College,<br />Purliya Road, Ranchi, Jharkhand
-                      </div>
+                      </a>
                     </div>
                   </div>
                   

@@ -118,9 +118,16 @@ export default function Footer() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
                 <MapPin size={15} style={{ color: 'var(--gold)', marginTop: '2px', flexShrink: 0 }} />
-                <span style={{ fontFamily: 'var(--sans)', fontSize: '0.85rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.7 }}>
+                <a 
+                  href="https://maps.app.goo.gl/cjRX1kb3UhFfGSfx9" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ fontFamily: 'var(--sans)', fontSize: '0.85rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.7, textDecoration: 'none' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--gold)'; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.55)'; }}
+                >
                   Near Ursuline Convent School, Purliya Road, Ranchi, Jharkhand
-                </span>
+                </a>
               </div>
               <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
                 <Phone size={15} style={{ color: 'var(--gold)', flexShrink: 0, marginTop: '2px' }} />
