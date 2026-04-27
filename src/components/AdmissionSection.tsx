@@ -28,7 +28,7 @@ export default function AdmissionSection() {
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '48px', alignItems: 'start' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px', alignItems: 'start' }}>
           {/* Fee Table */}
           <div>
             <h3 className="heading-md" style={{ marginBottom: '20px' }}>Fee Structure</h3>

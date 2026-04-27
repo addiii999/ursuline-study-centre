@@ -86,7 +86,7 @@ export default function Navbar() {
               <div style={{ fontFamily: 'var(--serif)', fontWeight: 700, fontSize: 'clamp(0.95rem, 2vw, 1.15rem)', color: 'var(--black)', lineHeight: 1.1 }}>
                 Ursuline Study Centre
               </div>
-              <div style={{ 
+              <div className="nav-subtitle" style={{ 
                 fontFamily: 'var(--sans)', 
                 fontSize: 'clamp(0.6rem, 1.2vw, 0.7rem)', 
                 color: 'var(--gold-dark)', 
@@ -117,7 +117,7 @@ export default function Navbar() {
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <a href="#contact" className="btn-gold" style={{ padding: '10px 22px', fontSize: '0.85rem' }}>
+            <a href="#contact" className="btn-gold nav-apply-btn" style={{ padding: '10px 22px', fontSize: '0.85rem' }}>
               Apply Now
             </a>
             <button
@@ -163,6 +163,10 @@ export default function Navbar() {
       </nav>
 
       <style>{`
+        @media (max-width: 640px) {
+          .nav-subtitle { display: none !important; }
+          .nav-apply-btn { display: none !important; }
+        }
         @media (min-width: 960px) {
           .desktop-nav { display: flex !important; }
           .mobile-menu-btn { display: none !important; }

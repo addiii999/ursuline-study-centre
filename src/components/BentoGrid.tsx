@@ -15,7 +15,7 @@ export default function BentoGrid() {
       </div>
 
       {/* Bento grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 auto-rows-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-5 auto-rows-auto">
 
         {/* Big card - spans 2 cols, 2 rows on md */}
         <div className="bento-card sm:col-span-2 md:row-span-2 p-6 sm:p-8 reveal floating" style={{ minHeight: "340px" }}>

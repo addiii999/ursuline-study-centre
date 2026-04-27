@@ -284,18 +284,18 @@ select.input-premium { cursor: pointer; appearance: none; background-image: url(
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 24px;
+  padding: 8px 22px; /* Slightly reduced */
   background: #0984E3; /* Electric Blue */
   color: #F5F6FA;    /* Cloud White */
-  border-radius: 8px;
+  border-radius: 6px; /* Slightly more refined radius */
   font-family: var(--sans);
-  font-size: clamp(0.7rem, 1.5vw, 0.85rem);
+  font-size: clamp(0.62rem, 1.3vw, 0.78rem); /* Slightly smaller text */
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   overflow: hidden;
   z-index: 1;
-  box-shadow: 0 10px 30px rgba(9, 132, 227, 0.3);
+  box-shadow: 0 8px 25px rgba(9, 132, 227, 0.25);
 }
 
 .visionary-banner::before {
@@ -416,6 +416,60 @@ select.input-premium { cursor: pointer; appearance: none; background-image: url(
 .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
 .section-py { padding: 88px 0; }
 .section-py-sm { padding: 60px 0; }
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE REFINEMENTS
+   (Mobile-First Hero & Layout)
+═══════════════════════════════════════════════════ */
+@media (max-width: 640px) {
+  .section-py { padding: 56px 0; }
+  .section-py-sm { padding: 40px 0; }
+  .heading-xl { font-size: 2.1rem; line-height: 1.1; }
+  .heading-lg { font-size: 1.75rem; line-height: 1.2; }
+  .heading-md { font-size: 1.4rem; }
+  .body-lg { font-size: 0.95rem; }
+  
+  .container { padding: 0 20px; }
+  
+  .hero-content {
+    padding: 32px 20px 48px !important;
+  }
+  
+  .pill-badge-container {
+    gap: 6px !important;
+    padding: 0 4px;
+  }
+
+  .pill-badge-container span {
+    font-size: 0.6rem !important;
+    padding: 4px 8px !important;
+    letter-spacing: 0.01em;
+  }
+
+  .visionary-banner {
+    padding: 6px 12px;
+    letter-spacing: 0.02em;
+    font-size: 0.55rem !important;
+    border-radius: 4px;
+  }
+
+  .section-badge {
+    padding: 4px 10px;
+    font-size: 0.62rem;
+  }
+
+  /* Fix for text that might stretch */
+  p, h1, h2, h3 {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+}
+
+/* Extra small mobile fix */
+@media (max-width: 360px) {
+  .heading-xl { font-size: 1.8rem; }
+  .visionary-banner { font-size: 0.55rem !important; padding: 5px 12px; }
+}
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
