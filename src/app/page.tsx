@@ -4,6 +4,7 @@ import AboutSection from '@/components/AboutSection';
 import CoursesSection from '@/components/CoursesSection';
 import FacultySection from '@/components/FacultySection';
 import WhyChooseUs from '@/components/WhyChooseUs';
+import YoutubeSection from '@/components/YoutubeSection';
 import AdmissionSection from '@/components/AdmissionSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
@@ -18,6 +19,7 @@ export default function Home() {
       <CoursesSection />
       <FacultySection />
       <WhyChooseUs />
+      <YoutubeSection />
       <AdmissionSection />
       <ContactSection />
       <Footer />
