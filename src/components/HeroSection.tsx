@@ -104,7 +104,7 @@ export default function HeroSection() {
                 href="https://play.google.com/store/apps/details?id=com.vefytech.academicorigin"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto"
+                className="w-full sm:w-auto btn-app-playstore"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
