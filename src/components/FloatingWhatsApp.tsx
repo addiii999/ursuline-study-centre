@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WHATSAPP_NUMBER = '917979000000'; // placeholder
+const WHATSAPP_NUMBER = '9507589503'; // Official primary WhatsApp number
 
 export default function FloatingWhatsApp() {
   const message = encodeURIComponent('Hi! I would like to enquire about admissions at Ursuline Study Centre for the 2026-27 session.');
@@ -16,10 +16,10 @@ export default function FloatingWhatsApp() {
         title="Download our official App on Google Play"
       >
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2.5 1.5L13.5 12.5L2.5 23.5V1.5Z" fill="#00A0FF"/>
-          <path d="M13.5 12.5L18 8L2.5 1.5L13.5 12.5Z" fill="#00F076"/>
-          <path d="M13.5 12.5L2.5 23.5L18 17L13.5 12.5Z" fill="#FF3A44"/>
-          <path d="M13.5 12.5L18 17L22 14.5L18 8L13.5 12.5Z" fill="#FFC900"/>
+          <path d="M2.5 1.5L13.5 12.5L2.5 23.5V1.5Z" fill="#00A0FF" />
+          <path d="M13.5 12.5L18 8L2.5 1.5L13.5 12.5Z" fill="#00F076" />
+          <path d="M13.5 12.5L2.5 23.5L18 17L13.5 12.5Z" fill="#FF3A44" />
+          <path d="M13.5 12.5L18 17L22 14.5L18 8L13.5 12.5Z" fill="#FFC900" />
         </svg>
       </a>
 

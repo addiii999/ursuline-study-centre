@@ -8,7 +8,7 @@ const feeRows = [
 ];
 
 const steps = [
-  { no: '01', title: 'Enquire Online / Visit', desc: 'Fill the enquiry form or visit us directly at Purliya Road, Ranchi.' },
+  { no: '01', title: 'Enquire Online / Call', desc: 'Fill the enquiry form or call us at +91 95075 89503 / +91 62068 74337' },
   { no: '02', title: 'Counselling Session', desc: 'Our faculty will assess your current level and recommend the right course path.' },
   { no: '03', title: 'Document Submission', desc: 'Submit school marksheets, Aadhar card, and passport-size photographs.' },
   { no: '04', title: 'Fee Payment & Enrollment', desc: 'Pay the annual fee of ₹15,000/- and receive your admission confirmation.' },

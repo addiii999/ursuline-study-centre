@@ -135,11 +135,14 @@ const PrivacyPolicy = () => {
                   </div>
                   
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginTop: '4px' }}>
-                    <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-                      <div style={{ width: '36px', height: '36px', borderRadius: '8px', background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(128,0,0,0.06)', flexShrink: 0 }}>
+                    <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                      <div style={{ width: '36px', height: '36px', borderRadius: '8px', background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(128,0,0,0.06)', flexShrink: 0, marginTop: '2px' }}>
                         <Phone size={16} style={{ color: 'var(--maroon)' }} />
                       </div>
-                      <span style={{ fontFamily: 'var(--sans)', fontSize: '0.95rem', color: 'var(--maroon)', fontWeight: 600 }}>+91 79790 00000</span>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                        <a href="tel:+919507589503" style={{ fontFamily: 'var(--sans)', fontSize: '0.95rem', color: 'var(--maroon)', fontWeight: 600, textDecoration: 'none' }}>+91 95075 89503</a>
+                        <a href="tel:+916206874337" style={{ fontFamily: 'var(--sans)', fontSize: '0.95rem', color: 'var(--maroon)', fontWeight: 600, textDecoration: 'none' }}>+91 62068 74337</a>
+                      </div>
                     </div>
                     <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
                       <div style={{ width: '36px', height: '36px', borderRadius: '8px', background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(128,0,0,0.06)', flexShrink: 0 }}>

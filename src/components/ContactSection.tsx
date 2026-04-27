@@ -2,18 +2,18 @@
 import React, { useState, useRef } from 'react';
 import { MapPin, Phone, MessageCircle, CheckCircle, AlertCircle, Loader } from 'lucide-react';
 
-const classes  = ['Class 9', 'Class 10', 'Class 11', 'Class 12', 'Dropper'];
-const streams  = ['Science (PCM)', 'Science (PCB)', 'Commerce', 'Humanities', 'Vocational Course'];
+const classes = ['Class 9', 'Class 10', 'Class 11', 'Class 12', 'Dropper'];
+const streams = ['Science (PCM)', 'Science (PCB)', 'Commerce', 'Humanities', 'Vocational Course'];
 
 type Status = 'idle' | 'loading' | 'success' | 'error' | 'cooldown';
 
-const WHATSAPP_NUMBER = '917979000000'; // placeholder - replace with real number
+const WHATSAPP_NUMBER = '9507589503'; // Official primary WhatsApp number
 
 function getLastSubmit(): number {
   try { return parseInt(localStorage.getItem('usc_last_submit') || '0', 10); } catch { return 0; }
 }
 function setLastSubmit() {
-  try { localStorage.setItem('usc_last_submit', Date.now().toString()); } catch {}
+  try { localStorage.setItem('usc_last_submit', Date.now().toString()); } catch { }
 }
 
 export default function ContactSection() {
@@ -95,9 +95,14 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <div style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', fontWeight: 700, color: 'var(--gray-text)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '3px' }}>Phone / WhatsApp</div>
-                    <a href={`https://wa.me/${WHATSAPP_NUMBER}`} style={{ fontFamily: 'var(--sans)', fontSize: '0.92rem', color: 'var(--black)', textDecoration: 'none', fontWeight: 600 }}>
-                      +91 79790 00000 (placeholder)
-                    </a>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                      <a href="https://wa.me/919507589503" style={{ fontFamily: 'var(--sans)', fontSize: '0.92rem', color: 'var(--black)', textDecoration: 'none', fontWeight: 600 }}>
+                        +91 95075 89503 (WhatsApp)
+                      </a>
+                      <a href="tel:+916206874337" style={{ fontFamily: 'var(--sans)', fontSize: '0.92rem', color: 'var(--black)', textDecoration: 'none', fontWeight: 600 }}>
+                        +91 62068 74337
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

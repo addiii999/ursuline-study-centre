@@ -122,11 +122,16 @@ export default function Footer() {
                   Near Ursuline Convent School, Purliya Road, Ranchi, Jharkhand
                 </span>
               </div>
-              <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-                <Phone size={15} style={{ color: 'var(--gold)', flexShrink: 0 }} />
-                <a href="tel:+917979000000" style={{ fontFamily: 'var(--sans)', fontSize: '0.85rem', color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}>
-                  +91 79790 00000
-                </a>
+              <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                <Phone size={15} style={{ color: 'var(--gold)', flexShrink: 0, marginTop: '2px' }} />
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                  <a href="tel:+919507589503" style={{ fontFamily: 'var(--sans)', fontSize: '0.85rem', color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}>
+                    +91 95075 89503
+                  </a>
+                  <a href="tel:+916206874337" style={{ fontFamily: 'var(--sans)', fontSize: '0.85rem', color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}>
+                    +91 62068 74337
+                  </a>
+                </div>
               </div>
               <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
                 <Mail size={15} style={{ color: 'var(--gold)', flexShrink: 0 }} />
