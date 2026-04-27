@@ -103,7 +103,7 @@ export default function AboutSection() {
                 </div>
               </div>
               <p className="body-md">
-                Ursuline Study Centre is proudly backed by this successfully operating institute with a proven record of academic excellence. Our systems, curriculum, and pedagogy are built on their expertise.
+                Ursuline Study Centre is proudly backed by <strong>Academic Origin</strong>, a successfully established academic institution known for strong results, trusted mentorship, and years of educational excellence.
               </p>
             </div>
           </div>
