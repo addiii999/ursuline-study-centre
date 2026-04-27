@@ -1,18 +1,11 @@
 import React from 'react';
-import { Trophy, TrendingUp } from 'lucide-react';
+import { Trophy, Award } from 'lucide-react';
 
 const stats = [
   { num: '95%', label: 'Board Exam Pass Rate', color: '#2d5da1' },
-  { num: '50+', label: 'JEE/NEET Selections', color: '#ff4d4d' },
+  { num: '50+', label: 'Competitive Selections', color: '#ff4d4d' },
   { num: '2500+', label: 'Students Mentored', color: '#2d2d2d' },
   { num: '10+', label: 'Years of Excellence', color: '#c9a800' },
-];
-
-const toppers = [
-  { name: 'Priya Sharma', score: 'AIR 4820', exam: 'JEE Mains 2024', emoji: '🥇' },
-  { name: 'Ankita Singh', score: '98.6%', exam: 'CBSE Boards 2024', emoji: '🥈' },
-  { name: 'Riya Kumari', score: 'NEET 620/720', exam: 'NEET 2024', emoji: '🥉' },
-  { name: 'Aanya Gupta', score: '96.4%', exam: 'JAC Boards 2024', emoji: '⭐' },
 ];
 
 export default function ResultsSection() {
@@ -23,14 +16,14 @@ export default function ResultsSection() {
         <div className="text-center mb-14">
           <div className="inline-flex items-center gap-2 mb-4">
             <Trophy size={22} className="text-[#ff4d4d]" />
-            <span className="font-kalam text-[15px] text-[#ff4d4d]">- Proven Track Record -</span>
+            <span className="font-kalam text-[15px] text-[#ff4d4d]">- Legacy of Excellence -</span>
             <Trophy size={22} className="text-[#ff4d4d]" />
           </div>
-          <h2 className="font-kalam text-[40px] sm:text-[52px] text-[#2d2d2d] leading-tight">
-            Our Students'<br /><span className="squiggle-underline">Results</span> Say It All
+          <h2 className="font-kalam text-[36px] sm:text-[48px] text-[#2d2d2d] leading-tight">
+            Built on the Proven Legacy of <br /><span className="squiggle-underline">Academic Origin</span>
           </h2>
-          <p className="font-patrick text-[17px] text-[#5a5550] mt-4 max-w-xl mx-auto">
-            Real students. Real results. Year after year.
+          <p className="font-patrick text-[18px] text-[#5a5550] mt-6 max-w-2xl mx-auto leading-relaxed">
+            Ursuline Study Centre is the premium new branch of <strong>Academic Origin</strong>, a long-standing institution known for its commitment to academic rigour. Now, we bring that same legacy of success to our dedicated girls-only campus.
           </p>
         </div>
 
@@ -48,42 +41,38 @@ export default function ResultsSection() {
           ))}
         </div>
 
-        {/* Toppers Cards */}
-        <div>
-          <div className="flex items-center gap-3 mb-6">
-            <TrendingUp size={20} className="text-[#2d5da1]" />
-            <h3 className="font-kalam text-[26px] text-[#2d2d2d]">Recent Toppers</h3>
-            <div className="flex-1 border-t-2 border-dashed border-[#2d2d2d] opacity-20" />
+        {/* USC Positioning */}
+        <div className="bg-white border-3 border-[#2d2d2d] p-8 shadow-hard relative mb-12" style={{ borderRadius: '15px' }}>
+          <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#2d2d2d] text-white px-4 py-1 text-[12px] font-kalam rounded-full">
+            Institutional Mission
           </div>
+          <p className="font-patrick text-[19px] text-[#2d2d2d] text-center italic leading-relaxed">
+            "Academic Origin has successfully mentored thousands of students over the last decade. Today, we are proud to bring this same academic excellence to <strong>Ursuline Study Centre</strong> with a focused mission to empower girls through premium education."
+          </p>
+        </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {toppers.map(({ name, score, exam, emoji }, i) => (
-              <div
-                key={name}
-                className={`relative bg-white border-3 border-[#2d2d2d] p-4 shadow-hard ${i % 2 === 0 ? '-rotate-1' : 'rotate-1'} hover:rotate-0 hover:scale-105 transition-all duration-200`}
-                style={{ borderRadius: '20px 255px 20px 255px / 255px 20px 255px 20px', border: '3px solid #2d2d2d' }}
-              >
-                {/* Tape */}
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-10 h-5 bg-[#fff3b0] border border-[#c9a800] opacity-80" style={{ borderRadius: '3px' }} />
-                <div className="text-center pt-2">
-                  <div className="text-[30px] mb-2">{emoji}</div>
-                  <div className="font-kalam text-[17px] text-[#2d2d2d] mb-1">{name}</div>
-                  <div className="font-kalam text-[22px] text-[#ff4d4d] mb-1">{score}</div>
-                  <div className="font-patrick text-[12px] text-[#9a9590]">{exam}</div>
-                </div>
-              </div>
-            ))}
+        {/* Competitive Success Info */}
+        <div className="flex flex-col md:flex-row items-center gap-8 p-6 bg-[#f0f7ff] rounded-xl border border-[#2d5da1]/20">
+          <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center border-2 border-[#2d5da1] shadow-sm flex-shrink-0">
+             <Award size={32} className="text-[#2d5da1]" />
+          </div>
+          <div>
+            <h3 className="font-kalam text-[22px] text-[#2d2d2d] mb-2">Consistent Academic Success</h3>
+            <p className="font-patrick text-[15px] text-[#5a5550] leading-relaxed">
+              Our legacy is built on year-after-year performance in <strong>JAC & CBSE Boards</strong> along with consistent selections in competitive exams like <strong>JEE and NEET</strong>. We believe in building a strong foundation that leads to lifelong success.
+            </p>
           </div>
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-12">
-          <p className="font-patrick text-[16px] text-[#5a5550] mb-4">Your name could be on this list next year. 🎯</p>
-          <a href="#demo" className="btn-primary inline-flex">
-            Start Your Journey →
+        <div className="text-center mt-16">
+          <p className="font-patrick text-[16px] text-[#5a5550] mb-4">Be a part of our next success story. 🎯</p>
+          <a href="#contact" className="btn-primary inline-flex">
+            Enquire for Admission →
           </a>
         </div>
       </div>
     </section>
   );
 }
+

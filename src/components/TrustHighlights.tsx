@@ -25,8 +25,8 @@ const highlights = [
   },
   {
     icon: <Award size={28} strokeWidth={2.5} className="text-[#ff4d4d]" />,
-    title: 'Parent Trusted',
-    desc: '10+ years. 2500+ students. A track record parents trust with confidence.',
+    title: 'Proven Legacy',
+    desc: 'Powered by Academic Origin with 10+ years of excellence and 2500+ successful students.',
     rotate: 'rotate-1',
     shadow: 'shadow-hard-red',
   },
@@ -73,7 +73,7 @@ export default function TrustHighlights() {
       <div className="text-center mt-14">
         <div className="inline-flex items-center gap-3">
           <div className="w-16 border-t-2 border-dashed border-[#2d2d2d] opacity-30" />
-          <span className="font-kalam text-[14px] text-[#9a9590]">est. 2014 · Ranchi</span>
+          <span className="font-kalam text-[14px] text-[#9a9590]">Academic Origin Legacy · Since 2014</span>
           <div className="w-16 border-t-2 border-dashed border-[#2d2d2d] opacity-30" />
         </div>
       </div>
