@@ -22,7 +22,13 @@ export default function ContactSection() {
   const [error, setError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    setForm(f => ({ ...f, [e.target.name]: e.target.value }));
+    const { name, value } = e.target;
+    if (name === 'phone') {
+      const numericValue = value.replace(/\D/g, '').slice(0, 10);
+      setForm(f => ({ ...f, [name]: numericValue }));
+    } else {
+      setForm(f => ({ ...f, [name]: value }));
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -38,7 +44,7 @@ export default function ContactSection() {
 
     // Validation
     if (!form.name.trim() || form.name.trim().length < 2) { setError('Please enter a valid name.'); return; }
-    if (!/^[6-9]\d{9}$/.test(form.phone.trim())) { setError('Please enter a valid 10-digit Indian mobile number.'); return; }
+    if (form.phone.length !== 10) { setError('Please enter a valid 10-digit mobile number.'); return; }
     if (!form.className) { setError('Please select your class.'); return; }
     if (!form.stream) { setError('Please select your stream.'); return; }
 
@@ -46,7 +52,7 @@ export default function ContactSection() {
     try {
       // Store in localStorage for admin review (frontend-only CRM)
       const leads = JSON.parse(localStorage.getItem('usc_leads') || '[]');
-      leads.push({ ...form, submittedAt: new Date().toISOString(), id: Date.now() });
+      leads.push({ ...form, phone: `+91 ${form.phone}`, submittedAt: new Date().toISOString(), id: Date.now() });
       localStorage.setItem('usc_leads', JSON.stringify(leads));
       setLastSubmit();
       await new Promise(r => setTimeout(r, 900)); // UX delay
@@ -56,7 +62,7 @@ export default function ContactSection() {
     }
   };
 
-  const waMessage = encodeURIComponent(`Hi, I would like to enquire about admission to Ursuline Study Centre.\n\nName: ${form.name || '(not filled)'}\nClass: ${form.className || '(not filled)'}\nStream: ${form.stream || '(not filled)'}`);
+  const waMessage = encodeURIComponent(`Hi, I would like to enquire about admission to Ursuline Study Centre.\n\nName: ${form.name || '(not filled)'}\nPhone: +91 ${form.phone || '(not filled)'}\nClass: ${form.className || '(not filled)'}\nStream: ${form.stream || '(not filled)'}`);
 
   return (
     <section id="contact" className="section-py" style={{ background: 'var(--white)' }}>
@@ -182,10 +188,10 @@ export default function ContactSection() {
                 <CheckCircle size={52} style={{ color: '#22c55e', margin: '0 auto 16px' }} />
                 <h3 className="heading-md" style={{ marginBottom: '10px', color: '#166534' }}>Enquiry Received!</h3>
                 <p style={{ fontFamily: 'var(--sans)', fontSize: '0.95rem', color: '#166534', lineHeight: 1.7 }}>
-                  Thank you, <strong>{form.name}</strong>! Our team will contact you on <strong>{form.phone}</strong> within 24 hours.
+                  Thank you, <strong>{form.name}</strong>! Our team will contact you on <strong>+91 {form.phone}</strong> within 24 hours.
                 </p>
                 <div style={{ marginTop: '20px' }}>
-                  <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi, I just submitted an enquiry for ${form.name} for ${form.stream} class ${form.className}.`}
+                  <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi, I just submitted an enquiry for ${form.name} for ${form.stream} class ${form.className}. Phone: +91 ${form.phone}`}
                     target="_blank" rel="noopener noreferrer"
                     style={{
                       display: 'inline-flex', alignItems: 'center', gap: '8px',
@@ -210,9 +216,24 @@ export default function ContactSection() {
                   <label className="label" style={{ display: 'block', marginBottom: '6px', color: 'var(--black)' }}>
                     Phone Number / फ़ोन नंबर *
                   </label>
-                  <input name="phone" value={form.phone} onChange={handleChange} required
-                    placeholder="10-digit mobile number" type="tel" maxLength={10}
-                    className="input-premium" />
+                  <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
+                    <div style={{
+                      position: 'absolute',
+                      left: '16px',
+                      fontFamily: 'var(--sans)',
+                      fontSize: '0.95rem',
+                      fontWeight: 700,
+                      color: 'var(--black)',
+                      pointerEvents: 'none',
+                      borderRight: '1px solid var(--gray-border)',
+                      paddingRight: '10px'
+                    }}>
+                      +91
+                    </div>
+                    <input name="phone" value={form.phone} onChange={handleChange} required
+                      placeholder="Enter 10 digits" type="tel" inputMode="numeric" maxLength={10}
+                      className="input-premium" style={{ paddingLeft: '65px' }} />
+                  </div>
                 </div>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
                   <div>
