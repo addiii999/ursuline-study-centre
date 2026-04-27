@@ -10,7 +10,7 @@ export default function FounderSection() {
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', background: 'radial-gradient(circle at 100% 0%, rgba(201,168,76,0.05) 0%, transparent 50%), radial-gradient(circle at 0% 100%, rgba(128,0,0,0.03) 0%, transparent 50%)' }} />
 
       <div className="container" style={{ position: 'relative' }}>
-        
+
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
           <span className="section-badge">Meet Our Founder</span>
@@ -42,34 +42,52 @@ export default function FounderSection() {
               border: '2px solid var(--gold)',
               background: 'var(--black)'
             }}>
-              <Image 
-                src="/founder.png" 
-                alt="Abhishek Pathak - Founder & Director" 
-                fill 
+              <Image
+                src="/founder.png"
+                alt="Abhishek Pathak - Founder & Director"
+                fill
                 style={{ objectFit: 'cover', objectPosition: 'center top' }}
                 sizes="(max-width: 768px) 100vw, 500px"
                 priority
               />
-              
+
               {/* Bottom Gradient overlay for text */}
               <div style={{
                 position: 'absolute',
                 bottom: 0, left: 0, right: 0,
-                padding: '60px 24px 24px',
-                background: 'linear-gradient(to top, rgba(0,0,0,0.95), transparent)',
-                color: 'white',
+                padding: '80px 24px 32px',
+                background: 'linear-gradient(to top, rgba(0,0,0,0.85) 40%, transparent 100%)',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
                 textAlign: 'center'
               }}>
-                <h3 style={{ fontFamily: 'var(--serif)', fontSize: '1.8rem', fontWeight: 700, margin: '0 0 6px 0', letterSpacing: '0.02em' }}>Abhishek Pathak</h3>
-                <p style={{ fontFamily: 'var(--sans)', fontSize: '0.95rem', color: 'var(--gold)', fontWeight: 600, margin: 0, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+                <h3 style={{
+                  fontFamily: 'var(--serif)',
+                  fontSize: '2rem',
+                  fontWeight: 800,
+                  margin: '0 0 8px 0',
+                  letterSpacing: '0.02em',
+                  color: '#fffaf0',
+                  textShadow: '0 2px 6px rgba(0,0,0,0.4)'
+                }}>
+                  Abhishek Pathak
+                </h3>
+                <p style={{
+                  fontFamily: 'var(--sans)',
+                  fontSize: '1.05rem',
+                  color: '#e6c35c',
+                  fontWeight: 700,
+                  margin: 0,
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase',
+                  textShadow: '0 1px 3px rgba(0,0,0,0.3)'
+                }}>
                   Founder & Director
                 </p>
               </div>
             </div>
-            
+
             {/* Experience floating badge */}
             <div style={{
               position: 'absolute',
@@ -88,13 +106,13 @@ export default function FounderSection() {
               zIndex: 10
             }}>
               <span style={{ fontFamily: 'var(--serif)', fontSize: '1.8rem', fontWeight: 800, color: 'var(--maroon)', lineHeight: 1, marginBottom: '2px' }}>10+</span>
-              <span style={{ fontFamily: 'var(--sans)', fontSize: '0.75rem', fontWeight: 700, color: 'var(--black)', textTransform: 'uppercase', letterSpacing: '0.05em', textAlign: 'center' }}>Years<br/>Exp.</span>
+              <span style={{ fontFamily: 'var(--sans)', fontSize: '0.75rem', fontWeight: 700, color: 'var(--black)', textTransform: 'uppercase', letterSpacing: '0.05em', textAlign: 'center' }}>Years<br />Exp.</span>
             </div>
           </div>
 
           {/* Right Column: Content */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '36px' }}>
-            
+
             {/* Top Qualification & Role */}
             <div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginBottom: '20px' }}>
