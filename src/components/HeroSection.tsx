@@ -97,10 +97,60 @@ export default function HeroSection() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="animate-fade-up delay-4" style={{ display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'center', marginBottom: '16px' }}>
+          <div className="animate-fade-up delay-4" style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center', marginBottom: '10px' }}>
             <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto max-w-[280px] sm:max-w-none">
               <a href="#contact" className="btn-gold w-full sm:w-auto" style={{ minWidth: '170px' }}>Apply Now</a>
-              <a href="#courses" className="btn-outline w-full sm:w-auto" style={{ minWidth: '170px' }}>Know More</a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.vefytech.academicorigin"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                  padding: '13px 24px',
+                  minWidth: '170px',
+                  minHeight: '50px',
+                  background: 'rgba(255,255,255,0.06)',
+                  color: 'white',
+                  fontFamily: 'var(--sans)',
+                  fontSize: '0.88rem',
+                  fontWeight: 600,
+                  letterSpacing: '0.03em',
+                  border: '1.5px solid rgba(255,255,255,0.25)',
+                  borderRadius: '4px',
+                  textDecoration: 'none',
+                  transition: 'all 0.25s ease',
+                  backdropFilter: 'blur(8px)',
+                }}
+                onMouseEnter={e => {
+                  (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.13)';
+                  (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.5)';
+                }}
+                onMouseLeave={e => {
+                  (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.06)';
+                  (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.25)';
+                }}
+              >
+                {/* Play Store icon */}
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+                  <path d="M3.18 23.76a1.98 1.98 0 0 1-.63-.48L13.5 12 2.55.72a1.98 1.98 0 0 1 .63-.48C3.6.06 4.12.25 4.6.53l13.2 7.63-3.76 3.84L3.18 23.76z" fill="rgba(255,255,255,0.85)"/>
+                  <path d="M20.44 15.1 17.8 13.6l-4.3-4.44 4.3-4.43 2.64-1.5c.9-.52 1.56-.1 1.56.95v9.96c0 1.06-.66 1.47-1.56.96z" fill="rgba(255,255,255,0.85)"/>
+                  <path d="M2.55.72 13.5 12 3.18 23.76c-.5-.47-.68-1.2-.68-2V2.72c0-.8.18-1.53.68-2z" fill="rgba(255,255,255,0.6)"/>
+                  <path d="M17.8 13.6 4.6 21.23c-.48.28-1 .47-1.42.53L13.5 12l4.3 1.6z" fill="rgba(255,255,255,0.7)"/>
+                </svg>
+                Get Our App
+              </a>
+            </div>
+
+            {/* App availability micro-badge */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#34d399', display: 'inline-block', flexShrink: 0 }} />
+              <span style={{ fontFamily: 'var(--sans)', fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', letterSpacing: '0.04em' }}>
+                Official app available on Google Play - Free
+              </span>
             </div>
           </div>
           <p className="animate-fade-up delay-4" style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', color: 'rgba(201,168,76,0.55)', marginBottom: '44px', letterSpacing: '0.04em' }}>
