@@ -73,7 +73,7 @@ export default function TrustHighlights() {
       <div className="text-center mt-14">
         <div className="inline-flex items-center gap-3">
           <div className="w-16 border-t-2 border-dashed border-[#2d2d2d] opacity-30" />
-          <span className="font-kalam text-[14px] text-[#9a9590]">Academic Origin Legacy · Since 2014</span>
+          <span className="font-kalam text-[14px] text-[#9a9590]">Ursuline Study Centre · Estd. 2026</span>
           <div className="w-16 border-t-2 border-dashed border-[#2d2d2d] opacity-30" />
         </div>
       </div>
