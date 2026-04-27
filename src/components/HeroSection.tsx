@@ -63,6 +63,13 @@ export default function HeroSection() {
           }}>
             Ursuline Study Centre
           </h1>
+
+          {/* Visionary Banner */}
+          <div className="animate-fade-up delay-1" style={{ marginBottom: '32px' }}>
+            <div className="visionary-banner">
+              UNDER THE VISIONARY GUIDANCE OF SR. DR. MARY GRACE
+            </div>
+          </div>
           <p className="animate-fade-up delay-2" style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)', color: 'rgba(255,255,255,0.75)', marginBottom: '8px', fontWeight: 400 }}>
             Empowering Girls. Building Futures.
           </p>

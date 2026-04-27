@@ -11,6 +11,11 @@ export default function AboutSection() {
             Who We Are
           </h2>
           <span className="gold-divider" style={{ display: 'block' }} />
+          <div style={{ marginTop: '24px' }}>
+            <div className="visionary-banner" style={{ fontSize: '0.7rem', padding: '8px 20px' }}>
+              UNDER THE VISIONARY GUIDANCE OF SR. DR. MARY GRACE
+            </div>
+          </div>
         </div>
 
         {/* Two-column layout */}
