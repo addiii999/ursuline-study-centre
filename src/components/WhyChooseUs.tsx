@@ -7,37 +7,37 @@ const reasons = [
     icon: <ShieldCheck size={22} strokeWidth={1.8} />,
     title: 'Only Girls Institute',
     hindi: 'सुरक्षित एवं अनुशासित वातावरण',
-    desc: 'A safe, focused, and distraction-free environment built exclusively for girl students - where every student feels secure and respected.',
+    desc: 'An uncompromising, secure, and highly disciplined campus designed specifically for girls. We guarantee a distraction-free academic journey where safety is our foremost priority.',
   },
   {
     icon: <BookOpen size={22} strokeWidth={1.8} />,
     title: 'Dual Board - JAC & CBSE',
     hindi: 'दोनों बोर्ड की तैयारी',
-    desc: 'We prepare students for both JAC and CBSE boards, giving them flexibility and comprehensive exam coverage.',
+    desc: 'Targeted syllabus mastery for both JAC and CBSE. Our structured approach ensures students not only pass but secure top-tier percentages in their board exams.',
   },
   {
     icon: <Users size={22} strokeWidth={1.8} />,
     title: 'PhD & M.Tech Faculty',
     hindi: 'अनुभवी एवं योग्य शिक्षक',
-    desc: 'Our teaching team includes Ph.D. holders and M.Tech qualified professionals with 5-12 years of coaching experience.',
+    desc: 'Students are mentored exclusively by Ranchi’s top subject matter experts, including Ph.D. holders and former board examiners with proven track records.',
   },
   {
     icon: <Globe size={22} strokeWidth={1.8} />,
     title: 'Bilingual Teaching',
     hindi: 'हिन्दी + English में पढ़ाई',
-    desc: 'We teach in both English and Hindi so every student - regardless of background - grasps concepts with clarity and confidence.',
+    desc: 'Complex concepts delivered in a seamless mix of Hindi and English. We eliminate the language barrier, ensuring 100% conceptual clarity for every student.',
   },
   {
     icon: <Layers size={22} strokeWidth={1.8} />,
     title: 'Academic + Vocational Combo',
     hindi: 'शैक्षिक एवं कौशल शिक्षा',
-    desc: 'Unique combination of board coaching alongside AI, Programming, DCA, Tally, and Social Media - building career-ready graduates.',
+    desc: 'Beyond traditional boards, we offer parallel certification in AI, Programming, DCA, and Tally—making our students highly competitive and career-ready.',
   },
   {
     icon: <MapPin size={22} strokeWidth={1.8} />,
     title: 'Near Ursuline Convent School',
     hindi: 'विश्वसनीय स्थान पर स्थित',
-    desc: 'Conveniently located near the prestigious Ursuline Convent campus, Purliya Road - trusted by local families for its safe, accessible location.',
+    desc: 'Situated securely near the prestigious Ursuline Convent on Purliya Road. A highly accessible, premium location trusted by thousands of local parents.',
   },
 ];
 

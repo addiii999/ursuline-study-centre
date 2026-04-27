@@ -47,7 +47,7 @@ export default function HeroSection() {
           }}>
             <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: 'var(--gold)', display: 'inline-block' }} />
             <span style={{ fontFamily: 'var(--sans)', fontSize: '0.7rem', fontWeight: 600, letterSpacing: '0.1em', color: 'var(--gold-light)', textTransform: 'uppercase' }}>
-              Admissions Open · 2026-27 Session
+              Limited Seats Available · 2026-27 Session
             </span>
           </div>
 
@@ -81,9 +81,9 @@ export default function HeroSection() {
           {/* Gold divider */}
           <div className="animate-fade-up delay-2" style={{ margin: '0 auto 28px', width: '80px', height: '2px', background: 'linear-gradient(90deg, transparent, var(--gold), transparent)' }} />
 
-          {/* Sub headline */}
-          <p className="animate-fade-up delay-3" style={{ fontFamily: 'var(--sans)', fontSize: 'clamp(0.95rem, 2vw, 1.1rem)', color: 'rgba(255,255,255,0.72)', maxWidth: '600px', margin: '0 auto 24px', lineHeight: 1.8 }}>
-            A premium, girls-only coaching institute located near Ursuline Convent School, Purliya Road, Ranchi - offering academic, competitive, and vocational excellence.
+          <p className="animate-fade-up delay-3" style={{ fontFamily: 'var(--sans)', fontSize: 'clamp(0.95rem, 2vw, 1.1rem)', color: 'rgba(255,255,255,0.72)', maxWidth: '650px', margin: '0 auto 24px', lineHeight: 1.8 }}>
+            <strong style={{ color: 'var(--gold-light)', fontWeight: 600 }}>Secure Your Daughter’s Future with Trusted Academic Mentorship.</strong><br/>
+            Ranchi’s premium girls-only coaching institute offering top-tier guidance for Classes 9-12 (JAC & CBSE), specialized in JEE, NEET, and Board preparation.
           </p>
 
           {/* Powered By Trust Badge */}
@@ -99,7 +99,7 @@ export default function HeroSection() {
           {/* CTA Buttons */}
           <div className="animate-fade-up delay-4" style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center', marginBottom: '10px' }}>
             <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto max-w-[280px] sm:max-w-none">
-              <a href="#contact" className="btn-gold w-full sm:w-auto" style={{ minWidth: '170px' }}>Apply Now</a>
+              <a href="#contact" className="btn-gold w-full sm:w-auto" style={{ minWidth: '170px' }}>Book Free Counselling</a>
               <a
                 href="https://play.google.com/store/apps/details?id=com.vefytech.academicorigin"
                 target="_blank"
@@ -146,8 +146,8 @@ export default function HeroSection() {
               </span>
             </div>
           </div>
-          <p className="animate-fade-up delay-4" style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', color: 'rgba(201,168,76,0.55)', marginBottom: '44px', letterSpacing: '0.04em' }}>
-            आज ही अपना प्रवेश सुनिश्चित करें
+          <p className="animate-fade-up delay-4" style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', color: 'rgba(201,168,76,0.8)', marginBottom: '44px', letterSpacing: '0.04em', fontWeight: 600 }}>
+            Priority Admission Open • Secure Your Seat Today
           </p>
 
           {/* Pill badges */}

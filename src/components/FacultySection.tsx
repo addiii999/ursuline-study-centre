@@ -51,18 +51,32 @@ const faculty = [
   },
 ];
 
+const expertiseBadges = [
+  'Former Board Examiners',
+  'JEE / NEET Specialists',
+  'Subject Matter Experts',
+];
+
 export default function FacultySection() {
   return (
     <section id="faculty" className="section-py" style={{ background: 'var(--white)' }}>
       <div className="container">
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-          <span className="section-badge">Meet the Experts</span>
-          <h2 className="heading-lg" style={{ marginTop: '16px', marginBottom: '12px' }}>Our Faculty</h2>
+          <span className="section-badge">Premium Academic Mentorship</span>
+          <h2 className="heading-lg" style={{ marginTop: '16px', marginBottom: '12px' }}>Our Elite Faculty</h2>
           <span className="gold-divider" style={{ display: 'block', margin: '0 auto' }} />
-          <p className="body-lg" style={{ marginTop: '16px', maxWidth: '500px', margin: '16px auto 0' }}>
-            Highly qualified educators dedicated to nurturing each student's full potential.
+          <p className="body-lg" style={{ marginTop: '16px', maxWidth: '560px', margin: '16px auto 0' }}>
+            Learn from Ranchi’s top subject matter experts and highly qualified educators with proven track records in Board, JEE, and NEET preparation.
           </p>
+          
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'center', marginTop: '24px' }}>
+            {expertiseBadges.map(badge => (
+              <span key={badge} style={{ fontFamily: 'var(--sans)', fontSize: '0.75rem', fontWeight: 700, padding: '6px 14px', borderRadius: '100px', background: 'var(--maroon-pale)', color: 'var(--maroon)', border: '1px solid rgba(128,0,0,0.1)', letterSpacing: '0.04em' }}>
+                ✓ {badge}
+              </span>
+            ))}
+          </div>
         </div>
 
         {/* Grid */}
@@ -88,11 +102,14 @@ export default function FacultySection() {
                   {initial}
                 </div>
                 <div>
-                  <div style={{ fontFamily: 'var(--serif)', fontSize: '1.05rem', fontWeight: 700, color: 'var(--black)', marginBottom: '2px' }}>
+                  <div style={{ fontFamily: 'var(--serif)', fontSize: '1.05rem', fontWeight: 700, color: 'var(--black)', marginBottom: '2px', display: 'flex', alignItems: 'center', gap: '6px' }}>
                     {name}
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--gold)" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                    </svg>
                   </div>
                   <div style={{ fontFamily: 'var(--sans)', fontSize: '0.8rem', fontWeight: 600, color, letterSpacing: '0.02em' }}>
-                    {subject}
+                    {subject} Expert
                   </div>
                 </div>
               </div>

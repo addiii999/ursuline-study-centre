@@ -87,7 +87,7 @@ export default function ContactSection() {
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
           <span className="section-badge">Reach Out</span>
-          <h2 className="heading-lg" style={{ marginTop: '16px', marginBottom: '12px' }}>Contact & Enquiry</h2>
+          <h2 className="heading-lg" style={{ marginTop: '16px', marginBottom: '12px' }}>Secure Your Daughter’s Seat Today</h2>
           <span className="gold-divider" style={{ display: 'block', margin: '0 auto' }} />
           <p className="body-lg" style={{ marginTop: '16px', maxWidth: '460px', margin: '16px auto 0' }}>
             Fill in the form below and our team will reach out within 24 hours.
@@ -108,17 +108,18 @@ export default function ContactSection() {
                     <MapPin size={16} />
                   </div>
                   <div>
-                    <div style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', fontWeight: 700, color: 'var(--gray-text)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '3px' }}>Address</div>
-                    <a 
-                      href="https://maps.app.goo.gl/cjRX1kb3UhFfGSfx9" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      style={{ fontFamily: 'var(--sans)', fontSize: '0.92rem', color: 'var(--black)', lineHeight: 1.6, textDecoration: 'none', display: 'block', marginBottom: '8px' }}
-                      onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--maroon)'; }}
-                      onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'var(--black)'; }}
-                    >
-                      Near Ursuline Convent School & Inter College,<br />Purliya Road, Ranchi, Jharkhand
-                    </a>
+                    <div style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', fontWeight: 700, color: 'var(--gray-text)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>Campus Location</div>
+                    <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--gray-border)', marginBottom: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
+                      <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.668700689953!2d85.3283177749069!3d23.364024803504825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e1f7f50a1df9%3A0xc3ab353381a1a7c3!2sUrsuline%20Convent%20Girls&#39;%20High%20School!5e0!3m2!1sen!2sin!4v1709476239121!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="200" 
+                        style={{ border: 0, display: 'block' }} 
+                        allowFullScreen={false} 
+                        loading="lazy" 
+                        referrerPolicy="no-referrer-when-downgrade"
+                      />
+                    </div>
                     <a 
                       href="https://maps.app.goo.gl/cjRX1kb3UhFfGSfx9" 
                       target="_blank" 
@@ -126,19 +127,18 @@ export default function ContactSection() {
                       className="btn-premium"
                       style={{ 
                         display: 'inline-flex', 
-                        padding: '6px 14px', 
-                        fontSize: '0.75rem', 
+                        padding: '8px 16px', 
+                        fontSize: '0.8rem', 
                         background: 'var(--white)', 
                         color: 'var(--maroon)', 
                         border: '1px solid var(--maroon)', 
                         borderRadius: '6px',
                         textDecoration: 'none',
                         fontWeight: 700,
-                        gap: '6px',
-                        marginTop: '4px'
+                        gap: '6px'
                       }}
                     >
-                      Visit Our Campus · Get Directions
+                      <MapPin size={14} /> Open in Google Maps
                     </a>
                   </div>
                 </div>
@@ -295,7 +295,25 @@ export default function ContactSection() {
                     <><Loader size={16} style={{ animation: 'spin 1s linear infinite' }} /> Submitting…</>
                   ) : 'Submit Enquiry'}
                 </button>
-                <p style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', color: 'var(--gray-text)', textAlign: 'center' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px', margin: '8px 0' }}>
+                  <div style={{ flex: 1, height: '1px', background: 'var(--gray-border)' }} />
+                  <span style={{ fontFamily: 'var(--sans)', fontSize: '0.8rem', color: 'var(--gray-text)', fontWeight: 600 }}>OR</span>
+                  <div style={{ flex: 1, height: '1px', background: 'var(--gray-border)' }} />
+                </div>
+                <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi! I am interested in admission details for Ursuline Study Centre.`}
+                  target="_blank" rel="noopener noreferrer"
+                  style={{
+                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
+                    padding: '14px', borderRadius: '8px', background: '#25D366', color: 'white',
+                    fontFamily: 'var(--sans)', fontWeight: 600, fontSize: '0.95rem', textDecoration: 'none',
+                    transition: 'all 0.2s ease', width: '100%'
+                  }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.opacity = '0.9'; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.opacity = '1'; }}
+                >
+                  <MessageCircle size={20} /> Chat Directly on WhatsApp
+                </a>
+                <p style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', color: 'var(--gray-text)', textAlign: 'center', marginTop: '4px' }}>
                   🔒 Your details are safe and will not be shared with anyone.
                 </p>
               </form>

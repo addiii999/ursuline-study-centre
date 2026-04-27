@@ -148,9 +148,26 @@ export default function Footer() {
               </div>
             </div>
 
-            <a href="/#contact" className="btn-gold" style={{ marginTop: '24px', display: 'block', textAlign: 'center', width: '100%', justifyContent: 'center' }}>
-              Apply Now →
-            </a>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '24px' }}>
+              <a href="/#contact" className="btn-gold" style={{ display: 'flex', textAlign: 'center', width: '100%', justifyContent: 'center' }}>
+                Book Counselling →
+              </a>
+              <a 
+                href="https://wa.me/919507589503?text=Hi! I would like to enquire about admissions at Ursuline Study Centre." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
+                  padding: '10px 24px', borderRadius: '4px', background: 'transparent', color: '#25D366',
+                  fontFamily: 'var(--sans)', fontWeight: 600, fontSize: '0.88rem', textDecoration: 'none',
+                  border: '1px solid #25D366', transition: 'all 0.2s ease', width: '100%'
+                }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(37,211,102,0.1)'; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
+              >
+                Chat on WhatsApp
+              </a>
+            </div>
           </div>
         </div>
 
