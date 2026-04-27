@@ -11,6 +11,7 @@ const quickLinks = [
   { label: 'Why Choose Us', href: '#why-us' },
   { label: 'Admission', href: '#admission' },
   { label: 'Contact', href: '#contact' },
+  { label: 'Privacy Policy', href: '/privacy-policy' },
 ];
 
 const courses = [
@@ -36,12 +37,12 @@ export default function Footer() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '24px' }}>
               {/* Brand Logo */}
               <div style={{
-                position: 'relative', 
-                width: '60px', 
-                height: '60px', 
-                borderRadius: '50%', 
-                overflow: 'hidden', 
-                border: '1.5px solid var(--gold)', 
+                position: 'relative',
+                width: '60px',
+                height: '60px',
+                borderRadius: '50%',
+                overflow: 'hidden',
+                border: '1.5px solid var(--gold)',
                 flexShrink: 0,
                 boxShadow: '0 4px 15px rgba(0,0,0,0.3)'
               }}>
@@ -51,13 +52,13 @@ export default function Footer() {
               {/* Brand Text */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
                 <div style={{ fontFamily: 'var(--serif)', fontSize: '1.1rem', fontWeight: 700, color: 'white', lineHeight: 1.1 }}>Ursuline Study Centre</div>
-                <div style={{ 
-                  fontFamily: 'var(--sans)', 
-                  fontSize: '0.65rem', 
-                  color: 'var(--gold)', 
-                  fontWeight: 600, 
-                  letterSpacing: '0.06em', 
-                  textTransform: 'uppercase' 
+                <div style={{
+                  fontFamily: 'var(--sans)',
+                  fontSize: '0.65rem',
+                  color: 'var(--gold)',
+                  fontWeight: 600,
+                  letterSpacing: '0.06em',
+                  textTransform: 'uppercase'
                 }}>
                   Under the visionary guidance of Sr. Dr. Mary Grace
                 </div>
@@ -159,18 +160,18 @@ export default function Footer() {
               </div>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '2px', marginTop: '2px' }}>
-              <p style={{ 
-                fontFamily: 'var(--sans)', 
-                fontSize: '0.7rem', 
-                color: 'rgba(255,255,255,0.3)', 
+              <p style={{
+                fontFamily: 'var(--sans)',
+                fontSize: '0.7rem',
+                color: 'rgba(255,255,255,0.3)',
                 letterSpacing: '0.02em',
                 transition: 'color 0.3s ease'
               }}
                 onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.5)'; }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.3)'; }}
               >
-                Designed and Developed by <span style={{ 
-                  color: 'var(--gold-light)', 
+                Designed and Developed by <span style={{
+                  color: 'var(--gold-light)',
                   fontWeight: 600,
                   opacity: 0.85,
                   transition: 'opacity 0.3s ease'
@@ -179,10 +180,10 @@ export default function Footer() {
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.opacity = '0.85'; }}
                 >Aayush</span>
               </p>
-              <p style={{ 
-                fontFamily: 'var(--sans)', 
-                fontSize: '0.62rem', 
-                color: 'rgba(255,255,255,0.15)', 
+              <p style={{
+                fontFamily: 'var(--sans)',
+                fontSize: '0.62rem',
+                color: 'rgba(255,255,255,0.15)',
                 letterSpacing: '0.04em',
                 transition: 'color 0.3s ease'
               }}

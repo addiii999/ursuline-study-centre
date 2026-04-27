@@ -5,13 +5,13 @@ import Image from 'next/image';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 const navLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Courses', href: '#courses' },
-  { label: 'Faculty', href: '#faculty' },
-  { label: 'Why Us', href: '#why-us' },
-  { label: 'Admission', href: '#admission' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/#about' },
+  { label: 'Courses', href: '/#courses' },
+  { label: 'Faculty', href: '/#faculty' },
+  { label: 'Why Us', href: '/#why-us' },
+  { label: 'Admission', href: '/#admission' },
+  { label: 'Contact', href: '/#contact' },
 ];
 
 const marqueeText = [
