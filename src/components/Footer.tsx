@@ -4,13 +4,13 @@ import Image from 'next/image';
 import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react';
 
 const quickLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'About Us', href: '#about' },
-  { label: 'Courses', href: '#courses' },
-  { label: 'Faculty', href: '#faculty' },
-  { label: 'Why Choose Us', href: '#why-us' },
-  { label: 'Admission', href: '#admission' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: '/#home' },
+  { label: 'About Us', href: '/#about' },
+  { label: 'Courses', href: '/#courses' },
+  { label: 'Faculty', href: '/#faculty' },
+  { label: 'Why Choose Us', href: '/#why-us' },
+  { label: 'Admission', href: '/#admission' },
+  { label: 'Contact', href: '/#contact' },
   { label: 'Privacy Policy', href: '/privacy-policy' },
 ];
 
@@ -136,7 +136,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <a href="#contact" className="btn-gold" style={{ marginTop: '24px', display: 'block', textAlign: 'center', width: '100%', justifyContent: 'center' }}>
+            <a href="/#contact" className="btn-gold" style={{ marginTop: '24px', display: 'block', textAlign: 'center', width: '100%', justifyContent: 'center' }}>
               Apply Now →
             </a>
           </div>

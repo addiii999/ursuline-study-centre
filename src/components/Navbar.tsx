@@ -117,7 +117,7 @@ export default function Navbar() {
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <a href="#contact" className="btn-gold nav-apply-btn" style={{ padding: '10px 22px', fontSize: '0.85rem' }}>
+            <a href="/#contact" className="btn-gold nav-apply-btn" style={{ padding: '10px 22px', fontSize: '0.85rem' }}>
               Apply Now
             </a>
             <button
@@ -155,7 +155,7 @@ export default function Navbar() {
                 {label}
               </a>
             ))}
-            <a href="#contact" className="btn-gold" style={{ display: 'block', textAlign: 'center', marginTop: '16px' }} onClick={() => setOpen(false)}>
+            <a href="/#contact" className="btn-gold" style={{ display: 'block', textAlign: 'center', marginTop: '16px' }} onClick={() => setOpen(false)}>
               Apply Now - 2026-27
             </a>
           </div>
