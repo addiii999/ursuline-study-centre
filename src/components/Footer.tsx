@@ -142,16 +142,38 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '24px', display: 'flex', flexWrap: 'wrap', gap: '12px', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '24px', display: 'flex', flexWrap: 'wrap', gap: '16px', justifyContent: 'space-between', alignItems: 'center' }}>
           <p style={{ fontFamily: 'var(--sans)', fontSize: '0.8rem', color: 'rgba(255,255,255,0.35)' }}>
             © 2026 Ursuline Study Centre. All Rights Reserved.
           </p>
           <p style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: '0.8rem', color: 'var(--gold)', letterSpacing: '0.06em' }}>
             ज्ञान · अनुशासन · सफलता
           </p>
-          <p style={{ fontFamily: 'var(--sans)', fontSize: '0.8rem', color: 'rgba(255,255,255,0.35)' }}>
-            Powered by <span style={{ color: 'var(--gold)' }}>Academic Origin</span>
-          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: { base: 'center', md: 'flex-end' }, gap: '4px' }}>
+            <p style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', color: 'rgba(255,255,255,0.35)' }}>
+              Powered by <span style={{ color: 'var(--gold)' }}>Academic Origin</span>
+            </p>
+            <p style={{ 
+              fontFamily: 'var(--sans)', 
+              fontSize: '0.7rem', 
+              color: 'rgba(255,255,255,0.25)', 
+              letterSpacing: '0.02em',
+              transition: 'color 0.3s ease'
+            }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.45)'; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.25)'; }}
+            >
+              Designed and Developed by <span style={{ 
+                color: 'var(--gold-light)', 
+                fontWeight: 600,
+                opacity: 0.8,
+                transition: 'opacity 0.3s ease'
+              }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.opacity = '1'; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.opacity = '0.8'; }}
+              >Aayush</span>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
