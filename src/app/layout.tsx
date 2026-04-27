@@ -16,14 +16,6 @@ export const metadata: Metadata = {
     description: "Empowering Girls. Building Futures. Ranchi's trusted destination for academic excellence and competitive success.",
     url: "https://ursulinstudycentre.in",
     siteName: "Ursuline Study Centre",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Ursuline Study Centre - Premium Girls' Coaching Institute",
-      },
-    ],
     locale: "en_IN",
     type: "website",
   },
@@ -31,7 +23,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ursuline Study Centre | Premium Girls' Coaching - Ranchi",
     description: "Empowering Girls. Building Futures. Ranchi's trusted destination for academic excellence.",
-    images: ["/og-image.png"],
   },
 };
 
