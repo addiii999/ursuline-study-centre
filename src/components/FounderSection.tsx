@@ -186,10 +186,26 @@ export default function FounderSection() {
               </div>
             </div>
 
-            {/* CTA */}
-            <div style={{ marginTop: '16px' }}>
-              <a href="/#contact" className="btn-maroon" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', padding: '16px 32px', fontSize: '1.05rem', boxShadow: '0 8px 20px rgba(128,0,0,0.2)' }}>
-                Book a Counselling Session <ChevronRight size={20} />
+            {/* Premium CTA */}
+            <div style={{ marginTop: '24px' }}>
+              <a href="/#contact" className="btn-premium" style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '12px',
+                padding: '18px 40px',
+                fontSize: '1.15rem',
+                fontWeight: 700,
+                borderRadius: '50px',
+                background: 'linear-gradient(135deg, var(--gold-dark) 0%, var(--maroon) 100%)',
+                color: 'white',
+                border: '2px solid var(--gold)',
+                boxShadow: '0 10px 30px rgba(128,0,0,0.25), 0 4px 15px rgba(201,168,76,0.3)',
+                transition: 'all 0.3s ease',
+                fontFamily: 'var(--serif)',
+                textDecoration: 'none',
+                letterSpacing: '0.03em'
+              }}>
+                Meet Our Academic Mentor <ChevronRight size={22} strokeWidth={2.5} />
               </a>
             </div>
 
