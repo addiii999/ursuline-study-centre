@@ -153,26 +153,40 @@ export default function Footer() {
             <p style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', color: 'rgba(255,255,255,0.35)' }}>
               Powered by <span style={{ color: 'var(--gold)' }}>Academic Origin</span>
             </p>
-            <p style={{ 
-              fontFamily: 'var(--sans)', 
-              fontSize: '0.7rem', 
-              color: 'rgba(255,255,255,0.25)', 
-              letterSpacing: '0.02em',
-              transition: 'color 0.3s ease'
-            }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.45)'; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.25)'; }}
-            >
-              Designed and Developed by <span style={{ 
-                color: 'var(--gold-light)', 
-                fontWeight: 600,
-                opacity: 0.8,
-                transition: 'opacity 0.3s ease'
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '2px', marginTop: '2px' }}>
+              <p style={{ 
+                fontFamily: 'var(--sans)', 
+                fontSize: '0.7rem', 
+                color: 'rgba(255,255,255,0.3)', 
+                letterSpacing: '0.02em',
+                transition: 'color 0.3s ease'
               }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.opacity = '1'; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.opacity = '0.8'; }}
-              >Aayush</span>
-            </p>
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.5)'; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.3)'; }}
+              >
+                Designed and Developed by <span style={{ 
+                  color: 'var(--gold-light)', 
+                  fontWeight: 600,
+                  opacity: 0.85,
+                  transition: 'opacity 0.3s ease'
+                }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.opacity = '1'; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.opacity = '0.85'; }}
+                >Aayush</span>
+              </p>
+              <p style={{ 
+                fontFamily: 'var(--sans)', 
+                fontSize: '0.62rem', 
+                color: 'rgba(255,255,255,0.15)', 
+                letterSpacing: '0.04em',
+                transition: 'color 0.3s ease'
+              }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.3)'; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.15)'; }}
+              >
+                Contact: 9798681756 | 9508639773
+              </p>
+            </div>
           </div>
         </div>
       </div>
