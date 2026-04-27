@@ -161,7 +161,7 @@ const PrivacyPolicy = () => {
 
               <div style={{ textAlign: 'center', marginTop: '10px' }}>
                 <p style={{ fontFamily: 'var(--sans)', fontSize: '0.8rem', color: 'var(--gray-text)', fontStyle: 'italic' }}>
-                  This Privacy Policy is effective as of April 27, 2026.<br />We reserve the right to update this policy periodically to reflect operational changes.
+                  This Privacy Policy is effective immediately and applies to all users of Ursuline Study Centre.<br />We reserve the right to update this policy periodically to reflect operational changes.
                 </p>
               </div>
 

@@ -5,6 +5,7 @@ const feeRows = [
   { stream: 'Science - PCM', fee: '₹15,000/-', duration: 'Per Year', session: '2026-27' },
   { stream: 'Science - PCB', fee: '₹15,000/-', duration: 'Per Year', session: '2026-27' },
   { stream: 'Commerce', fee: '₹15,000/-', duration: 'Per Year', session: '2026-27' },
+  { stream: 'Humanities', fee: '₹15,000/-', duration: 'Per Year', session: '2026-27' },
 ];
 
 const steps = [
