@@ -52,13 +52,11 @@ export default function HeroSection() {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-shimmer animate-fade-up delay-1" style={{ 
-            fontSize: 'clamp(1.4rem, 8vw, 6rem)', 
+          <h1 className="text-shimmer animate-fade-up delay-1 hero-main-title" style={{ 
             fontWeight: 400, 
             lineHeight: 1.1, 
             marginBottom: '14px', 
             fontFamily: '"Haettenschweiler", "Impact", "Arial Narrow Bold", sans-serif',
-            letterSpacing: '0.02em',
             textShadow: '0 4px 15px rgba(0,0,0,0.4)',
             textTransform: 'uppercase',
             whiteSpace: 'nowrap',

@@ -421,6 +421,11 @@ select.input-premium { cursor: pointer; appearance: none; background-image: url(
    RESPONSIVE REFINEMENTS
    (Mobile-First Hero & Layout)
 ═══════════════════════════════════════════════════ */
+.hero-main-title {
+  font-size: clamp(2rem, 6.5vw, 6rem);
+  letter-spacing: 0.02em;
+}
+
 @media (max-width: 640px) {
   .section-py { padding: 56px 0; }
   .section-py-sm { padding: 40px 0; }
@@ -430,6 +435,11 @@ select.input-premium { cursor: pointer; appearance: none; background-image: url(
   .body-lg { font-size: 0.95rem; }
   
   .container { padding: 0 20px; }
+  
+  .hero-main-title {
+    font-size: 6.8vw !important;
+    letter-spacing: 0 !important;
+  }
   
   .hero-content {
     padding: 32px 20px 48px !important;
@@ -468,6 +478,7 @@ select.input-premium { cursor: pointer; appearance: none; background-image: url(
 /* Extra small mobile fix */
 @media (max-width: 360px) {
   .heading-xl { font-size: 1.8rem; }
+  .hero-main-title { font-size: 6.2vw !important; }
   .visionary-banner { font-size: 0.55rem !important; padding: 5px 12px; }
 }
 
