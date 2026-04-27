@@ -45,11 +45,11 @@ export default function YoutubeSection() {
         
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-          <span className="section-badge">Learning Resources</span>
-          <h2 className="heading-lg" style={{ marginTop: '16px', marginBottom: '12px' }}>Featured Videos</h2>
+          <span className="section-badge">Premium Academic Guidance</span>
+          <h2 className="heading-lg" style={{ marginTop: '16px', marginBottom: '12px' }}>Academic Origin Learning Channel</h2>
           <span className="gold-divider" style={{ display: 'block', margin: '0 auto' }} />
           <p className="body-lg" style={{ marginTop: '16px', maxWidth: '600px', margin: '16px auto 0' }}>
-            Discover our premium educational environment through our official video gallery.
+            Access expert learning sessions and academic mentorship through our official Academic Origin YouTube Channel.
           </p>
         </div>
 
