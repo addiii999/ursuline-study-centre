@@ -51,7 +51,14 @@ export default function ParentTrustSection() {
                   <MapPin size={18} className="text-[#ff4d4d] flex-shrink-0" />
                   <div>
                     <div className="font-kalam text-[15px] text-[#2d2d2d]">Our Location</div>
-                    <div className="font-patrick text-[13px] text-[#5a5550]">Inside Ursuline Convent School & Inter College, Ranchi, Jharkhand</div>
+                    <a 
+                      href="https://maps.app.goo.gl/cjRX1kb3UhFfGSfx9" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="font-patrick text-[13px] text-[#5a5550] hover:text-[#ff4d4d] transition-colors"
+                    >
+                      Inside Ursuline Convent School & Inter College, Ranchi, Jharkhand
+                    </a>
                   </div>
                 </div>
                 <hr className="border-dashed border-[#e5e0d8]" />
@@ -59,7 +66,10 @@ export default function ParentTrustSection() {
                   <Phone size={18} className="text-[#2d5da1] flex-shrink-0" />
                   <div>
                     <div className="font-kalam text-[15px] text-[#2d2d2d]">Call / WhatsApp</div>
-                    <div className="font-patrick text-[13px] text-[#5a5550]">+91 97986 81755</div>
+                    <div className="flex flex-col">
+                      <a href="tel:+919507589503" className="font-patrick text-[13px] text-[#5a5550] hover:text-[#2d5da1] transition-colors">+91 95075 89503</a>
+                      <a href="tel:+916206874337" className="font-patrick text-[13px] text-[#5a5550] hover:text-[#2d5da1] transition-colors">+91 62068 74337</a>
+                    </div>
                   </div>
                 </div>
               </div>
