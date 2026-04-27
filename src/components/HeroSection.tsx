@@ -128,11 +128,11 @@ export default function HeroSection() {
 
               >
                 {/* Play Store icon */}
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-                  <path d="M3.18 23.76a1.98 1.98 0 0 1-.63-.48L13.5 12 2.55.72a1.98 1.98 0 0 1 .63-.48C3.6.06 4.12.25 4.6.53l13.2 7.63-3.76 3.84L3.18 23.76z" fill="rgba(255,255,255,0.85)"/>
-                  <path d="M20.44 15.1 17.8 13.6l-4.3-4.44 4.3-4.43 2.64-1.5c.9-.52 1.56-.1 1.56.95v9.96c0 1.06-.66 1.47-1.56.96z" fill="rgba(255,255,255,0.85)"/>
-                  <path d="M2.55.72 13.5 12 3.18 23.76c-.5-.47-.68-1.2-.68-2V2.72c0-.8.18-1.53.68-2z" fill="rgba(255,255,255,0.6)"/>
-                  <path d="M17.8 13.6 4.6 21.23c-.48.28-1 .47-1.42.53L13.5 12l4.3 1.6z" fill="rgba(255,255,255,0.7)"/>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+                  <path d="M2.5 1.5L13.5 12.5L2.5 23.5V1.5Z" fill="#00A0FF"/>
+                  <path d="M13.5 12.5L18 8L2.5 1.5L13.5 12.5Z" fill="#00F076"/>
+                  <path d="M13.5 12.5L2.5 23.5L18 17L13.5 12.5Z" fill="#FF3A44"/>
+                  <path d="M13.5 12.5L18 17L22 14.5L18 8L13.5 12.5Z" fill="#FFC900"/>
                 </svg>
                 Get Our App
               </a>
