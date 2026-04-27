@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const pillBadges = [
   'Only Girls Institute',
@@ -83,9 +84,19 @@ export default function HeroSection() {
           <div className="animate-fade-up delay-2" style={{ margin: '0 auto 28px', width: '80px', height: '2px', background: 'linear-gradient(90deg, transparent, var(--gold), transparent)' }} />
 
           {/* Sub headline */}
-          <p className="animate-fade-up delay-3" style={{ fontFamily: 'var(--sans)', fontSize: 'clamp(0.95rem, 2vw, 1.1rem)', color: 'rgba(255,255,255,0.72)', maxWidth: '600px', margin: '0 auto 36px', lineHeight: 1.8 }}>
+          <p className="animate-fade-up delay-3" style={{ fontFamily: 'var(--sans)', fontSize: 'clamp(0.95rem, 2vw, 1.1rem)', color: 'rgba(255,255,255,0.72)', maxWidth: '600px', margin: '0 auto 24px', lineHeight: 1.8 }}>
             A premium, girls-only coaching institute located near Ursuline Convent School, Purliya Road, Ranchi — offering academic, competitive, and vocational excellence.
           </p>
+
+          {/* Powered By Trust Badge */}
+          <div className="animate-fade-up delay-3" style={{ display: 'flex', justifyContent: 'center', marginBottom: '36px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(0,0,0,0.25)', padding: '6px 16px', borderRadius: '100px', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(4px)' }}>
+              <span style={{ fontFamily: 'var(--sans)', fontSize: '0.75rem', color: 'rgba(255,255,255,0.7)', letterSpacing: '0.02em' }}>Powered by</span>
+              <div style={{ background: 'white', padding: '3px 8px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}>
+                <Image src="/academic-origin-logo.jpg" alt="Academic Origin" width={80} height={20} style={{ objectFit: 'contain', width: 'auto', height: '16px' }} />
+              </div>
+            </div>
+          </div>
 
           {/* CTA Buttons */}
           <div className="animate-fade-up delay-4" style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '12px' }}>

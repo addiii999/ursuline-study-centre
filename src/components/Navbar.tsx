@@ -19,7 +19,13 @@ const marqueeText = [
   '✨ Classes 9th to 12th | JAC & CBSE Boards',
   '🎯 JEE · NEET · CLAT · AI · Programming · DCA · Tally',
   '📍 Near Ursuline Convent School, Purliya Road, Ranchi',
-  '💛 Powered by Academic Origin · श्रेष्ठ शिक्षा, उज्ज्वल भविष्य',
+  <span key="logo-text" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+    💛 Powered by 
+    <span style={{ background: 'white', padding: '2px 6px', borderRadius: '4px', display: 'inline-flex', alignItems: 'center' }}>
+      <Image src="/academic-origin-logo.jpg" alt="Academic Origin" width={65} height={16} style={{ objectFit: 'contain', width: 'auto', height: '14px' }} />
+    </span>
+    · श्रेष्ठ शिक्षा, उज्ज्वल भविष्य
+  </span>,
 ];
 
 export default function Navbar() {

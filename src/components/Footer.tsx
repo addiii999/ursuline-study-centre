@@ -150,9 +150,14 @@ export default function Footer() {
             ज्ञान · अनुशासन · सफलता
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '4px' }}>
-            <p style={{ fontFamily: 'var(--sans)', fontSize: '0.78rem', color: 'rgba(255,255,255,0.35)' }}>
-              Powered by <span style={{ color: 'var(--gold)' }}>Academic Origin</span>
-            </p>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', opacity: 0.9 }}>
+              <span style={{ fontFamily: 'var(--sans)', fontSize: '0.75rem', color: 'rgba(255,255,255,0.45)', whiteSpace: 'nowrap' }}>
+                Powered by
+              </span>
+              <div style={{ background: 'white', padding: '4px 8px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}>
+                <Image src="/academic-origin-logo.jpg" alt="Academic Origin" width={90} height={24} style={{ objectFit: 'contain', width: 'auto', height: '20px' }} />
+              </div>
+            </div>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '2px', marginTop: '2px' }}>
               <p style={{ 
                 fontFamily: 'var(--sans)', 

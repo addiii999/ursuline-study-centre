@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function AboutSection() {
   return (
@@ -92,12 +93,17 @@ export default function AboutSection() {
               borderRadius: '8px',
               background: 'var(--maroon-pale)',
             }}>
-              <div style={{ fontFamily: 'var(--sans)', fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.12em', color: 'var(--maroon)', textTransform: 'uppercase', marginBottom: '10px' }}>
+              <div style={{ fontFamily: 'var(--sans)', fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.12em', color: 'var(--maroon)', textTransform: 'uppercase', marginBottom: '14px' }}>
                 Sister Institute
               </div>
-              <h3 className="heading-sm" style={{ marginBottom: '8px' }}>Academic Origin</h3>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+                <span style={{ fontFamily: 'var(--sans)', fontSize: '0.85rem', fontWeight: 600, color: 'var(--maroon)' }}>Powered by</span>
+                <div style={{ background: 'white', padding: '6px 12px', borderRadius: '6px', display: 'flex', alignItems: 'center', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                  <Image src="/academic-origin-logo.jpg" alt="Academic Origin" width={110} height={28} style={{ objectFit: 'contain', width: 'auto', height: '24px' }} />
+                </div>
+              </div>
               <p className="body-md">
-                Ursuline Study Centre is proudly powered by <strong>Academic Origin</strong> — a successfully operating coaching institute with a proven record of academic excellence. Our systems, curriculum, and pedagogy are backed by Academic Origin's expertise.
+                Ursuline Study Centre is proudly backed by this successfully operating institute with a proven record of academic excellence. Our systems, curriculum, and pedagogy are built on their expertise.
               </p>
             </div>
           </div>
