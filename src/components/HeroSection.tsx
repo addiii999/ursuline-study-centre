@@ -125,14 +125,7 @@ export default function HeroSection() {
                   transition: 'all 0.25s ease',
                   backdropFilter: 'blur(8px)',
                 }}
-                onMouseEnter={e => {
-                  (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.13)';
-                  (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.5)';
-                }}
-                onMouseLeave={e => {
-                  (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.06)';
-                  (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.25)';
-                }}
+
               >
                 {/* Play Store icon */}
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
