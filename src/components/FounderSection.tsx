@@ -205,7 +205,7 @@ export default function FounderSection() {
                 textDecoration: 'none',
                 letterSpacing: '0.03em'
               }}>
-                Meet Our Academic Mentor <ChevronRight size={22} strokeWidth={2.5} />
+                Book a Counselling Session <ChevronRight size={22} strokeWidth={2.5} />
               </a>
             </div>
 
