@@ -51,7 +51,16 @@ export default function HeroSection() {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-shimmer animate-fade-up delay-1" style={{ fontSize: 'clamp(2.8rem, 7vw, 5rem)', fontWeight: 700, lineHeight: 1.05, marginBottom: '12px', fontFamily: 'var(--serif)' }}>
+          <h1 className="text-shimmer animate-fade-up delay-1" style={{ 
+            fontSize: 'clamp(3.5rem, 9vw, 6.5rem)', 
+            fontWeight: 400, 
+            lineHeight: 1, 
+            marginBottom: '16px', 
+            fontFamily: '"Haettenschweiler", "Impact", "Arial Narrow Bold", sans-serif',
+            letterSpacing: '0.04em',
+            textShadow: '0 4px 12px rgba(0,0,0,0.3)',
+            textTransform: 'uppercase'
+          }}>
             Ursuline Study Centre
           </h1>
           <p className="animate-fade-up delay-2" style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)', color: 'rgba(255,255,255,0.75)', marginBottom: '8px', fontWeight: 400 }}>
