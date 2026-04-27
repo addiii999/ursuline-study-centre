@@ -33,13 +33,43 @@ export default function Footer() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '40px', marginBottom: '48px' }}>
           {/* Brand */}
           <div style={{ gridColumn: 'span 1' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
-              <div style={{ width: '44px', height: '44px', borderRadius: '6px', overflow: 'hidden', border: '1.5px solid var(--gold)', flexShrink: 0, position: 'relative' }}>
-                <Image src="/logo.jpeg" alt="USC" fill style={{ objectFit: 'cover' }} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '20px' }}>
+              {/* Typographic Logo Mark */}
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <div style={{
+                  fontFamily: 'var(--logo-font)',
+                  fontSize: '2.5rem',
+                  color: '#B91C1C', /* Strong red typography matching image */
+                  lineHeight: 0.9,
+                  letterSpacing: '0.04em',
+                  transform: 'scaleY(1.05)',
+                  textShadow: '0.5px 0.5px 0 rgba(0,0,0,0.5)', /* Slightly darker shadow for footer */
+                  marginBottom: '2px'
+                }}>
+                  USC
+                </div>
+                <div style={{
+                  backgroundColor: '#0EA5E9', /* Light blue pill */
+                  color: 'var(--white)',
+                  fontFamily: 'var(--sans)',
+                  fontSize: '0.35rem',
+                  fontWeight: 700,
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase',
+                  padding: '3px 6px',
+                  borderRadius: '100px',
+                  lineHeight: 1,
+                  whiteSpace: 'nowrap',
+                  boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
+                }}>
+                  Under the visionary guidance of Sr. Dr. Mary Grace
+                </div>
               </div>
-              <div>
+
+              {/* Brand Text */}
+              <div style={{ paddingLeft: '16px', borderLeft: '1px solid rgba(255,255,255,0.2)' }}>
                 <div style={{ fontFamily: 'var(--serif)', fontSize: '0.95rem', fontWeight: 700, color: 'white', lineHeight: 1.1 }}>Ursuline Study Centre</div>
-                <div style={{ fontFamily: 'var(--sans)', fontSize: '0.65rem', color: 'var(--gold)', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase' }}>Powered by Academic Origin</div>
+                <div style={{ fontFamily: 'var(--sans)', fontSize: '0.65rem', color: 'var(--gold)', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', marginTop: '4px' }}>Powered by Academic Origin</div>
               </div>
             </div>
             <p style={{ fontFamily: 'var(--sans)', fontSize: '0.88rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.8, marginBottom: '20px' }}>

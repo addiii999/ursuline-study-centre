@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
 @import "tailwindcss";
 
 /* ═══════════════════════════════════════════════════
@@ -19,6 +19,7 @@
   --gray-border: #E8E4DC;
   --serif: 'Playfair Display', Georgia, serif;
   --sans:  'Inter', system-ui, sans-serif;
+  --logo-font: 'Anton', 'Impact', sans-serif;
 }
 
 /* ═══════════════════════════════════════════════════
