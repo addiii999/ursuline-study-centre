@@ -72,7 +72,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '20px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 280px), 1fr))', gap: '20px' }}>
           {reasons.map(({ icon, title, hindi, desc }, i) => (
             <div key={title} style={{
               padding: '28px',

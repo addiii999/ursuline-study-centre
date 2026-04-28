@@ -46,7 +46,7 @@ export default function ParentTrustSection() {
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '40px', alignItems: 'center' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '40px', alignItems: 'center' }}>
           
           {/* Left Side: Trust Card */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
@@ -107,7 +107,7 @@ export default function ParentTrustSection() {
           </div>
 
           {/* Right Side: Feature Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '24px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '24px' }}>
             {trustPoints.map((point, i) => (
               <div key={i} style={{ 
                 background: 'var(--white)', 

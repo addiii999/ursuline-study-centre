@@ -68,7 +68,7 @@ export default function CoursesSection() {
               </div>
 
               {/* Cards */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '16px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 240px), 1fr))', gap: '16px' }}>
                 {courses.map(({ icon, name, desc }) => (
                   <div key={name} className="card-gold" style={{ padding: '24px' }}>
                     <div style={{

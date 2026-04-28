@@ -20,7 +20,7 @@ export default function FounderSection() {
 
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))',
           gap: 'clamp(40px, 8vw, 80px)',
           alignItems: 'center',
           background: 'var(--gray-soft)',
@@ -134,7 +134,7 @@ export default function FounderSection() {
             {/* Premium Quote */}
             <div style={{
               position: 'relative',
-              padding: '28px 36px',
+              padding: 'clamp(20px, 5vw, 28px) clamp(20px, 5vw, 36px)',
               background: 'var(--white)',
               borderRadius: '16px',
               borderLeft: '4px solid var(--gold)',
@@ -147,7 +147,7 @@ export default function FounderSection() {
             </div>
 
             {/* Achievement Highlights Grid */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '24px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '24px' }}>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '14px' }}>
                 <div style={{ background: 'rgba(201,168,76,0.15)', padding: '12px', borderRadius: '12px', color: 'var(--gold-dark)', flexShrink: 0 }}>
                   <GraduationCap size={22} />
@@ -191,9 +191,10 @@ export default function FounderSection() {
               <a href="/#contact" className="btn-premium" style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '12px',
-                padding: '18px 40px',
-                fontSize: '1.15rem',
+                justifyContent: 'center',
+                gap: '8px',
+                padding: 'clamp(14px, 3vw, 18px) clamp(20px, 4vw, 40px)',
+                fontSize: 'clamp(1rem, 3vw, 1.15rem)',
                 fontWeight: 700,
                 borderRadius: '50px',
                 background: 'linear-gradient(135deg, var(--gold-dark) 0%, var(--maroon) 100%)',
@@ -203,9 +204,11 @@ export default function FounderSection() {
                 transition: 'all 0.3s ease',
                 fontFamily: 'var(--serif)',
                 textDecoration: 'none',
-                letterSpacing: '0.03em'
+                letterSpacing: '0.03em',
+                width: '100%',
+                textAlign: 'center'
               }}>
-                Book a Counselling Session <ChevronRight size={22} strokeWidth={2.5} />
+                Book Counselling <ChevronRight size={22} strokeWidth={2.5} />
               </a>
             </div>
 

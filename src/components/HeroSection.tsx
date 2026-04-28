@@ -58,9 +58,7 @@ export default function HeroSection() {
             marginBottom: '14px', 
             fontFamily: '"Haettenschweiler", "Impact", "Arial Narrow Bold", sans-serif',
             textShadow: '0 4px 15px rgba(0,0,0,0.4)',
-            textTransform: 'uppercase',
-            whiteSpace: 'nowrap',
-            display: 'inline-block',
+            textTransform: 'uppercase'
           }}>
             Ursuline Study Centre
           </h1>

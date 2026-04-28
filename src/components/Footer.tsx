@@ -33,7 +33,7 @@ export default function Footer() {
       <div className="container" style={{ paddingTop: '80px', paddingBottom: '40px' }}>
         <div style={{ 
           display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', 
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', 
           gap: '50px', 
           marginBottom: '60px' 
         }}>

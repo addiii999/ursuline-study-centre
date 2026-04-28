@@ -80,7 +80,7 @@ export default function FacultySection() {
         </div>
 
         {/* Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '24px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 280px), 1fr))', gap: '24px' }}>
           {faculty.map(({ name, subject, exp, qual, color, initial }) => (
             <div
               key={name}

@@ -107,7 +107,7 @@ export default function YoutubeSection() {
         </div>
 
         {/* Video Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '32px' }}>
           {featuredVideos.map((video) => {
             const videoUrl = `https://www.youtube.com/watch?v=${video.videoId}`;
             // Use hqdefault as it's more reliable across all videos, or mqdefault

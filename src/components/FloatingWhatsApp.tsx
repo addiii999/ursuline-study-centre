@@ -6,7 +6,7 @@ const WHATSAPP_NUMBER = '9507589503'; // Official primary WhatsApp number
 export default function FloatingWhatsApp() {
   const message = encodeURIComponent('Hi! I would like to enquire about admissions at Ursuline Study Centre for the 2026-27 session.');
   return (
-    <div className="fab-container" style={{ display: 'flex', flexDirection: 'column', gap: '16px', position: 'fixed', bottom: '32px', right: '32px', zIndex: 50, alignItems: 'center' }}>
+    <div className="fab-container" style={{ zIndex: 50 }}>
       {/* Play Store FAB */}
       <a
         href="https://play.google.com/store/apps/details?id=com.vefytech.academicorigin"

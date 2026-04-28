@@ -20,7 +20,7 @@ export default function AboutSection() {
         </div>
 
         {/* Two-column layout */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px', alignItems: 'start' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '48px', alignItems: 'start' }}>
           {/* Left - About USC */}
           <div>
             <h3 className="heading-md" style={{ marginBottom: '16px', color: 'var(--maroon)' }}>
