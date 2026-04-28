@@ -41,7 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "description": "Premium girls-only coaching institute in Ranchi for Classes 9-12 (JAC & CBSE). Specialists in Science, Commerce, Humanities, JEE, NEET, and CLAT. Guided by Academic Origin.",
     "url": "https://ursulinstudycentre.in",
     "logo": "https://ursulinstudycentre.in/logo.jpeg",
-    "image": "https://ursulinstudycentre.in/og-image.png",
+    "image": "https://ursulinstudycentre.in/logo.jpeg",
     "telephone": "+91-95075-89503",
     "email": "ursulinestudycentre@gmail.com",
     "address": {

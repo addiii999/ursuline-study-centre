@@ -40,7 +40,7 @@ const YoutubeIcon = ({ size = 24 }: { size?: number }) => (
 
 export default function YoutubeSection() {
   return (
-    <section id="videos" className="section-py" style={{ background: 'var(--gray-soft)' }}>
+    <section id="youtube" className="section-py" style={{ background: 'var(--gray-soft)' }}>
       <div className="container">
         
         {/* Header */}
